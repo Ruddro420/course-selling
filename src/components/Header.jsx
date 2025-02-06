@@ -1,65 +1,85 @@
 import { Link } from "react-router-dom";
 
 const Header = () => {
-    const menuContent=[
-        {
-            title:"হোম",
-            link:"/"
-        },
-        {
-            title:"আমাদের সম্পর্কে",
-            link:"/about-us"
-        },
-        {
-            title:"কোর্স সমূহ",
-            link:"/all-courses"
-        },
-        {
-            title:"যোগাযোগ",
-            link:"/contact"
-        }
-    ]
-    return (
-        <div>
-            <header className="bg-[#FCF8F1] bg-opacity-30">
-                <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="flex items-center justify-between h-16 lg:h-20">
-                        <div className="flex-shrink-0">
-                            <Link to={"/"} title="" className="flex">
-                                <img className="w-44" src="../../img/logo_black.svg" alt="Britto_Learning" />
-                            </Link>
-                        </div>
-
-                        <button type="button" className="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100">
-                            {/*    <!-- Menu open: "hidden", Menu closed: "block" --> */}
-                            <svg className="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 8h16M4 16h16"></path>
-                            </svg>
-
-                            {/*  <!-- Menu open: "block", Menu closed: "hidden" --> */}
-                            <svg className="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-                            </svg>
-                        </button>
-
-                        <div className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
-                            
-                           {menuContent.map((menu,index)=>(
-                                <Link key={index} to={menu.link} title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80 font-bold">
-                             {menu.title}</Link>
-                           ))}
-
-                            
-
-                            
-                        </div>
-
-                        <Link to='/login' href="#" title="" className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-[#0CC0DF] rounded-full" role="button"> লগইন করুন </Link>
-                    </div>
-                </div>
-            </header>
+  const menuContent = [
+    {
+      title: "হোম",
+      link: "/",
+    },
+    {
+      title: "আমাদের সম্পর্কে",
+      link: "/about-us",
+    },
+    {
+      title: "কোর্স সমূহ",
+      link: "/all-courses",
+    },
+    {
+      title: "যোগাযোগ",
+      link: "/contact",
+    },
+  ];
+  return (
+    <div>
+      <nav className="bg-[#FCF8F1] bg-opacity-30  fixed w-full z-20 top-0 start-0 ">
+        <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto px-6 lg:px-8 py-4">
+          <Link to={"/"} title="" className="flex">
+            <img
+              className="lg:h-10 h-8"
+              src="../../img/logo-black.png"
+              alt="Britto_Learning"
+            />
+          </Link>
+          <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button type="button" className="text-white hover:text-black bg-[#0CC0DF] hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-[#0CC0DF] dark:hover:bg-yellow-300 dark:focus:ring-yellow-300">লগইন করুন</button>
+          
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span className="sr-only">Open main menu</span>
+              <svg
+                className="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
+              {menuContent.map((menu, index) => (
+                <li key={index}>
+                  <Link
+                    to={menu.link}
+                    className="text-base text-black transition-all duration-200 hover:text-opacity-80 font-bold"
+                    aria-current="page"
+                  >
+                    {menu.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-    );
+      </nav>
+    </div>
+  );
 };
 
 export default Header;
