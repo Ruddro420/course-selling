@@ -1,0 +1,43 @@
+{
+    "title": "বৃত্ত লার্নিং কেনো ?",
+    "description": "আমাদের কোর্স সবার থেকে আলাদা কেনো সেটি বুঝতে হলে আমাদের ফ্রি কোর্সগুলোই যথেষ্ট",
+    "features": [
+      {
+        "name": "Gmail",
+        "description": "Direct Integration",
+        "image": "https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/gmail-logo.png",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+      },
+      {
+        "name": "Slack",
+        "description": "Direct Integration",
+        "image": "https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/slack-logo.png",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+      },
+      {
+        "name": "Shopify",
+        "description": "Direct Integration",
+        "image": "https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/shopify-logo.png",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+      },
+      {
+        "name": "Intercom",
+        "description": "Direct Integration",
+        "image": "https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/intercom-logo.png",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+      },
+      {
+        "name": "Twitter",
+        "description": "Direct Integration",
+        "image": "https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/twitter-logo.png",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+      },
+      {
+        "name": "Sketch",
+        "description": "Direct Integration",
+        "image": "https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/sketch-logo.png",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+      }
+    ]
+  }
+  

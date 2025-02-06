@@ -12,104 +12,87 @@ const WhyUsSection = () => {
                     <div className="grid grid-cols-1 gap-6 mt-12 lg:mt-16 xl:gap-10 sm:grid-cols-2 lg:grid-cols-3">
                         <div className="overflow-hidden bg-white rounded shadow">
                             <div className="p-8">
-                                <div className="flex items-center">
-                                    <img className="flex-shrink-0 w-12 h-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/gmail-logo.png" alt="" />
+                                <div className="flex flex-col justify-center items-center">
+                                    <img className="flex-shrink-0 w-20 h-auto mb-5" src="/public/img/whyus/online-learning.png" alt="" />
                                     <div className="ml-5 mr-auto">
-                                        <p className="text-xl font-semibold text-black">Gmail</p>
-                                        <p className="mt-px text-sm text-gray-600">Direct Integration</p>
+                                        <p className="text-3xl font-semibold text-black">অভিজ্ঞ ও পেশাদার মেন্টর
+                                        </p>
                                     </div>
-                                    <svg className="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
+                                    <p className=" text-xl leading-relaxed  text-center text-black mt-7">মার্কেটের অভিজ্ঞ ও প্রফেশনাল মেন্টর কর্তৃক প্রতিটি কোর্স তৈরি করা হয়েছে।</p>
                                 </div>
-                                <p className="text-base leading-relaxed text-gray-600 mt-7">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                
                             </div>
                         </div>
 
                         <div className="overflow-hidden bg-white rounded shadow">
                             <div className="p-8">
-                                <div className="flex items-center">
-                                    <img className="flex-shrink-0 w-12 h-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/slack-logo.png" alt="" />
+                                <div className="flex flex-col justify-center items-center">
+                                    <img className="flex-shrink-0 w-20 h-auto mb-5" src="/public/img/whyus/self-employed.png" alt="" />
                                     <div className="ml-5 mr-auto">
-                                        <p className="text-xl font-semibold text-black">Slack</p>
-                                        <p className="mt-px text-sm text-gray-600">Direct Integration</p>
+                                        <p className="text-3xl  font-semibold text-black">স্কিল ডেভেলপমেন্ট
+                                        </p>
                                     </div>
-                                    <svg className="block w-6 h-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
+                                    <p className=" text-xl leading-relaxed text-center text-black mt-7">মার্কেটের অভিজ্ঞ ও প্রফেশনাল মেন্টর কর্তৃক প্রতিটি কোর্স তৈরি করা হয়েছে।</p>
                                 </div>
-                                <p className="text-base leading-relaxed text-gray-600 mt-7">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                
                             </div>
                         </div>
 
                         <div className="overflow-hidden bg-white rounded shadow">
                             <div className="p-8">
-                                <div className="flex items-center">
-                                    <img className="flex-shrink-0 w-12 h-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/shopify-logo.png" alt="" />
+                                <div className="flex flex-col justify-center items-center">
+                                    <img className="flex-shrink-0 w-20 h-auto mb-5" src="/public/img/whyus/archive.png" alt="" />
                                     <div className="ml-5 mr-auto">
-                                        <p className="text-xl font-semibold text-black">Shopify</p>
-                                        <p className="mt-px text-sm text-gray-600">Direct Integration</p>
+                                        <p className="text-3xl font-semibold text-black">প্রয়োজনীয় রিসোর্স সংগ্রহ</p>
                                     </div>
-                                    <svg className="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
+                                    <p className=" text-xl leading-relaxed text-center text-black mt-7">মার্কেটের অভিজ্ঞ ও প্রফেশনাল মেন্টর কর্তৃক প্রতিটি কোর্স তৈরি করা হয়েছে।</p>
                                 </div>
-                                <p className="text-base leading-relaxed text-gray-600 mt-7">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                               
                             </div>
                         </div>
 
                         <div className="overflow-hidden bg-white rounded shadow">
                             <div className="p-8">
-                                <div className="flex items-center">
-                                    <img className="flex-shrink-0 w-12 h-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/intercom-logo.png" alt="" />
+                                <div className="flex flex-col justify-center items-center">
+                                    <img className="flex-shrink-0 w-20 h-auto mb-5" src="/public/img/whyus/document.png" alt="" />
                                     <div className="ml-5 mr-auto">
-                                        <p className="text-xl font-semibold text-black">Intercom</p>
-                                        <p className="mt-px text-sm text-gray-600">Direct Integration</p>
+                                        <p className="text-3xl font-semibold text-black">সার্টিফিকেশন</p>
                                     </div>
-                                    <svg className="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
+                                    <p className=" text-xl leading-relaxed text-center text-black mt-7">মার্কেটের অভিজ্ঞ ও প্রফেশনাল মেন্টর কর্তৃক প্রতিটি কোর্স তৈরি করা হয়েছে।</p>
                                 </div>
-                                <p className="text-base leading-relaxed text-gray-600 mt-7">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                              
                             </div>
                         </div>
 
                         <div className="overflow-hidden bg-white rounded shadow">
                             <div className="p-8">
-                                <div className="flex items-center">
-                                    <img className="flex-shrink-0 w-12 h-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/twitter-logo.png" alt="" />
+                                <div className="flex flex-col justify-center items-center">
+                                    <img className="flex-shrink-0 w-20 h-auto mb-5" src="/public/img/whyus/software.png" alt="" />
                                     <div className="ml-5 mr-auto">
-                                        <p className="text-xl font-semibold text-black">Twitter</p>
-                                        <p className="mt-px text-sm text-gray-600">Direct Integration</p>
+                                        <p className="text-3xl font-semibold text-black">ক্যারিয়ার সাপোর্ট</p>
                                     </div>
-                                    <svg className="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
+                                    <p className=" text-xl leading-relaxed text-center text-black mt-7">মার্কেটের অভিজ্ঞ ও প্রফেশনাল মেন্টর কর্তৃক প্রতিটি কোর্স তৈরি করা হয়েছে।</p>
                                 </div>
-                                <p className="text-base leading-relaxed text-gray-600 mt-7">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                               
                             </div>
                         </div>
 
                         <div className="overflow-hidden bg-white rounded shadow">
                             <div className="p-8">
-                                <div className="flex items-center">
-                                    <img className="flex-shrink-0 w-12 h-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/sketch-logo.png" alt="" />
+                                <div className="flex flex-col justify-center items-center">
+                                    <img className="flex-shrink-0 w-20 h-auto mb-5" src="/public/img/whyus/sync.png" alt="" />
                                     <div className="ml-5 mr-auto">
-                                        <p className="text-xl font-semibold text-black">Sketch</p>
-                                        <p className="mt-px text-sm text-gray-600">Direct Integration</p>
+                                        <p className="text-3xl font-semibold text-black">আপডেটেড কোর্স মডিউল</p>
                                     </div>
-                                    <svg className="hidden w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                    </svg>
+                                    <p className=" text-xl leading-relaxed text-center text-black mt-7">মার্কেটের অভিজ্ঞ ও প্রফেশনাল মেন্টর কর্তৃক প্রতিটি কোর্স তৈরি করা হয়েছে।</p>
                                 </div>
-                                <p className="text-base leading-relaxed text-gray-600 mt-7">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                              
                             </div>
                         </div>
+
+                       
                     </div>
 
-                    <div className="mt-12 text-center">
-                        <a href="#" title="" className="inline-flex p-3 font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"> Check all 1,593 applications </a>
-                    </div>
                 </div>
             </section>
 
