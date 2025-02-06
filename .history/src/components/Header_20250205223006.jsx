@@ -34,7 +34,7 @@ const Header = () => {
                             <a href="#" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80 font-bold"> যোগাযোগ </a>
                         </div>
 
-                        <Link to='/login' href="#" title="" className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full" role="button"> লগইন করুন </Link>
+                        <Link to='/login' href="#" title="" className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full" role="button"> লগইন করুন </a>
                     </div>
                 </div>
             </header>

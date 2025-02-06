@@ -8,8 +8,6 @@ import {
 import Home from './pages/Home.jsx';
 import MainLayout from './MainLayout/MainLayout.jsx';
 import LoginPage from './pages/LoginPage.jsx';
-import AuthPage from './pages/AuthPage.jsx';
-import CoursePage from './pages/CoursePage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,20 +17,12 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />
-      },
-      {
-        path: '/single-course',
-        element: <CoursePage />
       }
     ]
   },
   {
     path: '/login',
     element: <LoginPage />
-  },
-  {
-    path: '/register',
-    element: <AuthPage />
   }
 ]);
 
