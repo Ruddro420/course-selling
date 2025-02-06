@@ -12,6 +12,7 @@ import AuthPage from './pages/AuthPage.jsx';
 import CoursePage from './pages/CoursePage.jsx';
 import AllCourses from './pages/AllCourses.jsx';
 import About from './pages/About.jsx';
+import ContactUs from './pages/ContactUs.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: '/all-courses',
         element: <AllCourses />
+      },
+      {
+        path: '/contact',
+        element: <ContactUs />
       }
     ]
   },

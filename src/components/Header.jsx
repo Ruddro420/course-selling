@@ -16,7 +16,7 @@ const Header = () => {
         },
         {
             title:"যোগাযোগ",
-            link:"#"
+            link:"/contact"
         }
     ]
     return (
