@@ -4,11 +4,11 @@ const Header = () => {
     return (
         <div>
             <header className="bg-[#FCF8F1] bg-opacity-30">
-                <div className="px-4 mx-auto sm:px-6 lg:px-8">
+                <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16 lg:h-20">
                         <div className="flex-shrink-0">
                             <a href="#" title="" className="flex">
-                                <img className="w-auto h-8" src="../../img/logo.png" alt="" />
+                                <img className="w-44" src="../../img/logo_black.svg" alt="" />
                             </a>
                         </div>
 
@@ -34,7 +34,7 @@ const Header = () => {
                             <a href="#" title="" className="text-base text-black transition-all duration-200 hover:text-opacity-80 font-bold"> যোগাযোগ </a>
                         </div>
 
-                        <Link to='/login' href="#" title="" className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full" role="button"> লগইন করুন </Link>
+                        <Link to='/login' href="#" title="" className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-[#0CC0DF] rounded-full" role="button"> লগইন করুন </Link>
                     </div>
                 </div>
             </header>
