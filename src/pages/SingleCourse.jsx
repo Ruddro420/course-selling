@@ -4,7 +4,7 @@ import CourseSylabus from "../components/courseComponent/CourseSylabus";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const CoursePage = () => {
+const SingleCourse = () => {
   const [loading, setLoading] = useState(true);
   const [course, setCourse] = useState({});
   const { courseId } = useParams();
@@ -31,7 +31,7 @@ const CoursePage = () => {
       {loading ? (
         <div>Loading...</div>
       ) : (
-        <div className="pt-24">
+        <div className="">
           <CourseHero course={course}/>
           <CourseSylabus course={course}/>
         </div>
@@ -40,4 +40,4 @@ const CoursePage = () => {
   );
 };
 
-export default CoursePage;
+export default SingleCourse;

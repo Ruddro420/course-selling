@@ -1,9 +1,37 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import CourseSection from "../components/CourseSection";
 const AllCourses = () => {
+  const [courses, setCourses] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Fetch testimonials data
+    axios
+      .get("/public/data/Courses.json")
+      .then((response) => {
+        setCourses(response.data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error(
+          "There was an error fetching the testimonials data!",
+          error
+        );
+        setLoading(false);
+      });
+  }, []);
   return (
     <div>
-      <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
+      <section className=" bg-opacity-30 py-10 sm:py-16 lg:py-24">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            All Courses
+        <div className="py-10 flex">  
+          {loading ? (
+            <>Loading...</>
+          ) : (
+            <CourseSection courses={courses}/>
+          )}
+        </div>
         </div>
       </section>
     </div>

@@ -1,6 +1,5 @@
 import AboutSection from "../components/AboutSection";
 import ContactSection from "../components/ContactSection";
-import CourseSection from "../components/CourseSection";
 import Hero from "../components/Hero";
 import CourseSlider from "../components/Sliders/CourseSlider";
 import TeamSection from "../components/TeamSection";
@@ -12,11 +11,10 @@ const Home = () => {
             <div className="bg-white">
                 <Hero />
                 <AboutSection />
-                <CourseSection />
+                <CourseSlider />
                 <WhyUsSection />
                 <TeamSection />
                 <ContactSection />
-                <CourseSlider />
             </div>
 
         </div>

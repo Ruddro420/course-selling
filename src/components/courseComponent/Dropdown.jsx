@@ -6,8 +6,8 @@ const Dropdown = ({ heading, description }) => {
     return (
       <>
      <div className="p-0 border sylebus mt-2 border-[#0BA3C4]">
-          <details className="group">
-            <summary className="flex border-[#0BA3C4] text-black p-4 cursor-pointer list-none items-center justify-between font-medium ">
+          <details className="group p-0">
+            <summary className="flex border-[#0BA3C4] text-black p-4 cursor-pointer list-none items-center justify-between font-medium w-full">
               <span>{heading}</span>
               <span className="transition group-open:rotate-180">
                 <svg

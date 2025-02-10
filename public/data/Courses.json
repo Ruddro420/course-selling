@@ -1,74 +1,153 @@
 [
     {
-        "courseId": "Lead_Generation_Mastery",
-        "title": "Lead Generation Mastery",
-        "subtitle": "FROM BASICS TO BRILLIANCE",
-        "category": "Marketing",
-        "originalPrice": "499.00",
-        "discountedPrice": "0.00",
-        "image": "../../img/lead-generation.jpg"
+      "courseId": "Lead_Generation_Mastery",
+      "title": "Lead Generation Mastery",
+      "subtitle": "FROM BASICS TO BRILLIANCE",
+      "category": "Marketing",
+      "image": "../../img/lead-generation.jpg",
+      "intro": "https://www.youtube.com/embed/IjlYXtI2-GU?si=gBJ8wmkM5Jta3u4m",
+      "originalPrice": "499.00",
+      "discountedPrice": "",
+      "features": [
+        "১টি বিষয়",
+        "প্রতি সপ্তাহে ১টি লাইভ ক্লাস",
+        "ডেইলি ও উইকলি এক্সাম",
+        "অধ্যায়ভিত্তিক লেকচার শিট"
+      ],
+      "sylebus": {
+        "B2B Lead Generation": [
+          "What is B2B Lead Generation",
+          "Why B2B Lead Generation is Important",
+          "How to Generate B2B Leads",
+          "B2B Lead Generation Strategies",
+          "B2B Lead Generation Tools",
+          "B2B Lead Generation Techniques",
+          "B2B Lead Generation Tips",
+          "B2B Lead Generation Best Practices"
+        ],
+        "B2C Lead Generation": [
+          "What is B2C Lead Generation",
+          "Why B2C Lead Generation is Important",
+          "How to Generate B2C Leads",
+          "B2C Lead Generation Strategies",
+          "B2C Lead Generation Tools",
+          "B2C Lead Generation Techniques",
+          "B2C Lead Generation Tips",
+          "B2C Lead Generation Best Practices"
+        ]
+      },
+      "description": "ডিজিটাল মার্কেটিংয়ের সবচেয়ে গুরুত্বপূর্ণ দিকগুলোর মধ্যে একটি হলো লিড জেনারেশন। অনেকেই এই প্রক্রিয়া সঠিকভাবে বোঝেন না, যার ফলে ব্যবসায় কাঙ্ক্ষিত গ্রোথ আসে না। এই কোর্সের মাধ্যমে আপনি শিখবেন কীভাবে কার্যকরভাবে লিড সংগ্রহ করতে হয়, সঠিক দর্শকদের কাছে পৌঁছাতে হয় এবং বিক্রয়ে রূপান্তর করতে হয়।"
     },
     {
-        "courseId": "SEO_Mastery",
-        "title": "SEO Mastery",
-        "subtitle": "RANKING MADE EASY",
-        "category": "SEO",
-        "originalPrice": "599.00",
-        "discountedPrice": "99.00",
-        "image": "../../img/lead-generation.jpg"
+      "courseId": "SEO_Mastery",
+      "title": "SEO Mastery",
+      "subtitle": "RANKING MADE EASY",
+      "category": "SEO",
+      "image": "../../img/lead-generation.jpg",
+      "intro": "",
+      "originalPrice": "599.00",
+      "discountedPrice": "99.00",
+      "features": [
+        "১টি বিষয়",
+        "প্রতি সপ্তাহে ১টি লাইভ ক্লাস",
+        "ডেইলি ও উইকলি এক্সাম",
+        "অধ্যায়ভিত্তিক লেকচার শিট"
+      ],
+      "sylebus": {
+        "SEO Basics": [
+          "What is SEO?",
+          "Importance of SEO",
+          "Types of SEO: On-page, Off-page, Technical",
+          "SEO Myths and Facts"
+        ],
+        "Keyword Research": [
+          "Understanding Keywords",
+          "Keyword Research Tools",
+          "Long-tail vs Short-tail Keywords",
+          "Competitor Keyword Analysis"
+        ],
+        "On-Page SEO": [
+          "Title Tags & Meta Descriptions",
+          "Header Tags Optimization",
+          "Image Optimization",
+          "Internal Linking Strategies"
+        ],
+        "Off-Page SEO": [
+          "Backlink Strategies",
+          "Guest Posting",
+          "Social Signals",
+          "Influencer Outreach"
+        ]
+      },
+      "description": "অনলাইনে ব্যবসার সাফল্যের অন্যতম চাবিকাঠি হলো সার্চ ইঞ্জিন অপটিমাইজেশন (SEO)। অনেকেই SEO-র বিভিন্ন টেকনিক বুঝতে সমস্যায় পড়েন, ফলে ওয়েবসাইট সার্চ র‍্যাংকিংয়ে পিছিয়ে পড়ে। এই কোর্সের মাধ্যমে আপনি শিখবেন কীভাবে আপনার ওয়েবসাইটকে গুগলে প্রথম পেজে আনতে হয়।"
     },
     {
-        "courseId": "Facebook_Ads_Pro",
-        "title": "Facebook Ads Pro",
-        "subtitle": "BOOST YOUR BUSINESS",
-        "category": "Advertising",
-        "originalPrice": "799.00",
-        "discountedPrice": "199.00",
-        "image": "../../img/lead-generation.jpg"
+      "courseId": "Facebook_Ads_Pro",
+      "title": "Facebook Ads Pro",
+      "subtitle": "BOOST YOUR BUSINESS",
+      "category": "Advertising",
+      "image": "../../img/lead-generation.jpg",
+      "intro": "https://www.youtube.com/embed/IjlYXtI2-GU?si=gBJ8wmkM5Jta3u4m",
+      "originalPrice": "799.00",
+      "discountedPrice": "199.00",
+      "features": [
+        "১টি বিষয়",
+        "প্রতি সপ্তাহে ১টি লাইভ ক্লাস",
+        "ডেইলি ও উইকলি এক্সাম",
+        "অধ্যায়ভিত্তিক লেকচার শিট"
+      ],
+      "sylebus": {
+        "Facebook Ads Basics": [
+          "What is Facebook Advertising?",
+          "Types of Facebook Ads",
+          "Ad Objectives & Goals"
+        ],
+        "Targeting Strategies": [
+          "Understanding Facebook Audience",
+          "Custom & Lookalike Audiences",
+          "Interest & Behavioral Targeting"
+        ],
+        "Campaign Optimization": [
+          "A/B Testing",
+          "Budget Allocation",
+          "Performance Tracking & Analytics"
+        ]
+      },
+      "description": "ফেসবুক বিজ্ঞাপন কীভাবে দেওয়া হয়, কীভাবে সঠিক অডিয়েন্স টার্গেট করা হয় এবং বিজ্ঞাপন থেকে সর্বোচ্চ ROI পাওয়া যায়—এসব বিষয় অনেকের কাছেই জটিল মনে হয়। এই কোর্সের মাধ্যমে আপনি শিখবেন কিভাবে প্রফেশনাল লেভেলে Facebook Ads সেটআপ ও অপটিমাইজ করা হয়।"
     },
     {
-        "courseId": "Google_Ads_Mastery",
-        "title": "Google Ads Mastery",
-        "subtitle": "GET THE BEST ROI",
-        "category": "Advertising",
-        "originalPrice": "899.00",
-        "discountedPrice": "299.00",
-        "image": "../../img/lead-generation.jpg"
-    },
-    {
-        "courseId": "Email_Marketing_Expert",
-        "title": "Email Marketing Expert",
-        "subtitle": "CONVERT LEADS INTO SALES",
-        "category": "Marketing",
-        "originalPrice": "499.00",
-        "discountedPrice": "149.00",
-        "image": "../../img/lead-generation.jpg"
-    },
-    {
-        "courseId": "Content_Marketing_Pro",
-        "title": "Content Marketing Pro",
-        "subtitle": "CREATE ENGAGING CONTENT",
-        "category": "Marketing",
-        "originalPrice": "699.00",
-        "discountedPrice": "199.00",
-        "image": "../../img/lead-generation.jpg"
-    },
-    {
-        "courseId": "Social_Media_Strategy",
-        "title": "Social Media Strategy",
-        "subtitle": "GROW YOUR AUDIENCE",
-        "category": "Social Media",
-        "originalPrice": "599.00",
-        "discountedPrice": "149.00",
-        "image": "../../img/lead-generation.jpg"
-    },
-    {
-        "courseId": "YouTube_Marketing",
-        "title": "YouTube Marketing",
-        "subtitle": "MONETIZE YOUR CHANNEL",
-        "category": "Social Media",
-        "originalPrice": "799.00",
-        "discountedPrice": "249.00",
-        "image": "../../img/lead-generation.jpg"
+      "courseId": "Google_Ads_Pro",
+      "title": "Google Ads Pro",
+      "subtitle": "BOOST YOUR BUSINESS",
+      "category": "Advertising",
+      "image": "../../img/lead-generation.jpg",
+      "intro": "https://www.youtube.com/embed/IjlYXtI2-GU?si=gBJ8wmkM5Jta3u4m",
+      "originalPrice": "799.00",
+      "discountedPrice": "199.00",
+      "features": [
+        "১টি বিষয়",
+        "প্রতি সপ্তাহে ১টি লাইভ ক্লাস",
+        "ডেইলি ও উইকলি এক্সাম",
+        "অধ্যায়ভিত্তিক লেকচার শিট"
+      ],
+      "sylebus": {
+        "Facebook Ads Basics": [
+          "What is Facebook Advertising?",
+          "Types of Facebook Ads",
+          "Ad Objectives & Goals"
+        ],
+        "Targeting Strategies": [
+          "Understanding Facebook Audience",
+          "Custom & Lookalike Audiences",
+          "Interest & Behavioral Targeting"
+        ],
+        "Campaign Optimization": [
+          "A/B Testing",
+          "Budget Allocation",
+          "Performance Tracking & Analytics"
+        ]
+      },
+      "description": "ফেসবুক বিজ্ঞাপন কীভাবে দেওয়া হয়, কীভাবে সঠিক অডিয়েন্স টার্গেট করা হয় এবং বিজ্ঞাপন থেকে সর্বোচ্চ ROI পাওয়া যায়—এসব বিষয় অনেকের কাছেই জটিল মনে হয়। এই কোর্সের মাধ্যমে আপনি শিখবেন কিভাবে প্রফেশনাল লেভেলে Facebook Ads সেটআপ ও অপটিমাইজ করা হয়।"
     }
-]
+  ]
+  

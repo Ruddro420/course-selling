@@ -9,7 +9,7 @@ import Home from './pages/Home.jsx';
 import MainLayout from './MainLayout/MainLayout.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 import AuthPage from './pages/AuthPage.jsx';
-import CoursePage from './pages/CoursePage.jsx';
+import SingleCourse from './pages/SingleCourse.jsx';
 import AllCourses from './pages/AllCourses.jsx';
 import About from './pages/About.jsx';
 import ContactUs from './pages/ContactUs.jsx';
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/course/:courseId',
-        element: <CoursePage />
+        element: <SingleCourse />
       },
       {
         path: '/all-courses',
