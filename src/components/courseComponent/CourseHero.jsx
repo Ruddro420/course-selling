@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 import { IoBookOutline } from "react-icons/io5";
+import Bn from "../EnToBn/Bn";
 
 const CourseHero = ({course}) => {
   console.log(course);
-  
+
   return (
     <div>
     <div className="bg-gray-900 py-20 course-hero-section  h-80 flex items-center justify-between mx-auto p-4 lg:py-56">
@@ -43,18 +44,18 @@ const CourseHero = ({course}) => {
               {/* Fee-container */}
               <div className="suggestion-pricing dark:text-white">
                 <div className="p-5">
-                  <a href="#">
+                  
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                       <span className="text-4xl font-semibold text-white tracking-tighter">
-                        {course.discountedPrice? course.discountedPrice : course.originalPrice}
+                      <Bn content={course.discountedPrice? course.discountedPrice : course.originalPrice}/>
                       </span>
                     </h5>
-                  </a>
+                  
                   <p className="mb-3 font-normal dark:text-white text-gray-700">
                     {course.title}
                   </p>
-                  <button className="bg-[#0BA3C4] whitespace-nowrap text-center md:w-full w-full rounded py-2 lg:py-2 text-white ">
-                    কোর্সটি কিনুন
+                  <button className="bg-[#0BA3C4] hover:bg-[#FCD34D] hover:text-black text-md font-semibold whitespace-nowrap text-center md:w-full w-full rounded py-2 lg:py-2 text-white cursor-pointer">
+                    Enroll Now
                   </button>
                 </div>
 
