@@ -1,0 +1,74 @@
+[
+    {
+        "courseId": "Lead_Generation_Mastery",
+        "title": "Lead Generation Mastery",
+        "subtitle": "FROM BASICS TO BRILLIANCE",
+        "category": "Marketing",
+        "originalPrice": "499.00",
+        "discountedPrice": "0.00",
+        "image": "../../img/lead-generation.jpg"
+    },
+    {
+        "courseId": "SEO_Mastery",
+        "title": "SEO Mastery",
+        "subtitle": "RANKING MADE EASY",
+        "category": "SEO",
+        "originalPrice": "599.00",
+        "discountedPrice": "99.00",
+        "image": "../../img/lead-generation.jpg"
+    },
+    {
+        "courseId": "Facebook_Ads_Pro",
+        "title": "Facebook Ads Pro",
+        "subtitle": "BOOST YOUR BUSINESS",
+        "category": "Advertising",
+        "originalPrice": "799.00",
+        "discountedPrice": "199.00",
+        "image": "../../img/lead-generation.jpg"
+    },
+    {
+        "courseId": "Google_Ads_Mastery",
+        "title": "Google Ads Mastery",
+        "subtitle": "GET THE BEST ROI",
+        "category": "Advertising",
+        "originalPrice": "899.00",
+        "discountedPrice": "299.00",
+        "image": "../../img/lead-generation.jpg"
+    },
+    {
+        "courseId": "Email_Marketing_Expert",
+        "title": "Email Marketing Expert",
+        "subtitle": "CONVERT LEADS INTO SALES",
+        "category": "Marketing",
+        "originalPrice": "499.00",
+        "discountedPrice": "149.00",
+        "image": "../../img/lead-generation.jpg"
+    },
+    {
+        "courseId": "Content_Marketing_Pro",
+        "title": "Content Marketing Pro",
+        "subtitle": "CREATE ENGAGING CONTENT",
+        "category": "Marketing",
+        "originalPrice": "699.00",
+        "discountedPrice": "199.00",
+        "image": "../../img/lead-generation.jpg"
+    },
+    {
+        "courseId": "Social_Media_Strategy",
+        "title": "Social Media Strategy",
+        "subtitle": "GROW YOUR AUDIENCE",
+        "category": "Social Media",
+        "originalPrice": "599.00",
+        "discountedPrice": "149.00",
+        "image": "../../img/lead-generation.jpg"
+    },
+    {
+        "courseId": "YouTube_Marketing",
+        "title": "YouTube Marketing",
+        "subtitle": "MONETIZE YOUR CHANNEL",
+        "category": "Social Media",
+        "originalPrice": "799.00",
+        "discountedPrice": "249.00",
+        "image": "../../img/lead-generation.jpg"
+    }
+]

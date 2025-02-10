@@ -64,6 +64,7 @@ const CourseSection = () => {
                             আমাদের সেরা কিছু কোর্স যেগুলো আপনাদের দক্ষ করতে যথেষ্ট সাহায্য করবে।
                         </p>
                     </div>
+                    
                     <div className="hidden lg:flex lg:items-center lg:space-x-3">
                         <button onClick={prevSlide} className="w-9 h-9 flex items-center justify-center border border-gray-300 rounded text-gray-400 hover:bg-blue-600 hover:text-white">
                             &#8592;

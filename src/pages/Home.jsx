@@ -2,6 +2,7 @@ import AboutSection from "../components/AboutSection";
 import ContactSection from "../components/ContactSection";
 import CourseSection from "../components/CourseSection";
 import Hero from "../components/Hero";
+import CourseSlider from "../components/Sliders/CourseSlider";
 import TeamSection from "../components/TeamSection";
 import WhyUsSection from "../components/WhyUsSection";
 
@@ -15,6 +16,7 @@ const Home = () => {
                 <WhyUsSection />
                 <TeamSection />
                 <ContactSection />
+                <CourseSlider />
             </div>
 
         </div>
