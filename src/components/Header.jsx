@@ -21,7 +21,7 @@ const Header = () => {
   ];
   return (
     <div>
-      <nav className="bg-[#FCF8F1] bg-opacity-30  fixed w-full z-[999] top-0 start-0 ">
+      <nav className="bg-white bg-opacity-30  fixed w-full z-[999] top-0 start-0 ">
         <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto px-6 lg:px-8 py-4">
           <Link to={"/"} title="" className="flex">
             <img

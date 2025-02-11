@@ -19,10 +19,11 @@ const ContactSection = () => {
       })
       .catch((error) => {
         console.error(
-          "There was an error fetching the testimonials data!",
+          "There was an error fetching Course Data",
+          toast.error("Failed to fetch Course Data"),
           error
         );
-        setLoading(false);
+        // setLoading(false);
       });
   }, []);
 
@@ -238,11 +239,14 @@ const ContactSection = () => {
                               id="course"
                             >
                               <option value="">Select Targated Course</option>
-                              {courses.map((course, index) => (
-                                <option key={index} value={course.title}>
-                                  {course.title}
-                                </option>
-                              ))}
+                              
+                                
+                                {courses?.map((course, index) => (
+                                  <option key={index} value={course.title}>
+                                    {course.title}
+                                  </option>
+                                ))}
+                             
                             </select>
                           </div>
                         </div>

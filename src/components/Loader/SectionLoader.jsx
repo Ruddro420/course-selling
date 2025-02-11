@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 
-const SectionLoader = ({section, loading}) => {
+const SectionLoader = ({section, loading, className}) => {
     return (
-        <div className="relative">
+        <div className={`relative ${className}`}>
                   {/* ------------ */}
                   {section}
 

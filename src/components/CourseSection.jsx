@@ -8,7 +8,10 @@ const CourseSection = ({ courses }) => {
       className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-transform duration-300 transform`}
     >
       {courses.map((course, index) => (
-        <div key={index} className="w-full flex-shrink-0 bg-white  shadow-lg rounded-lg">
+        <div
+          key={index}
+          className="w-full flex-shrink-0 bg-white  shadow-lg rounded-lg"
+        >
           <div className="relative shadow-lg">
             <img
               className="w-full h-64 object-cover rounded-t-lg"

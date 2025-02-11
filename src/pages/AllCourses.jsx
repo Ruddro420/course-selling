@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import CourseSection from "../components/CourseSection";
+import Loader from "../components/Loader/Loader";
 const AllCourses = () => {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -27,7 +28,7 @@ const AllCourses = () => {
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="py-10 flex">  
           {loading ? (
-            <>Loading...</>
+            <><Loader/></>
           ) : (
             <CourseSection courses={courses}/>
           )}

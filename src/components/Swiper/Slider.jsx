@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Loader from "../Loader/Loader";
+import Bn from "../EnToBn/Bn";
 const Slider = () => {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -71,7 +72,7 @@ const Slider = () => {
                       <div className="flex justify-between items-center mt-6">
                         <div>
                           <p className="text-2xl font-bold text-gray-800">
-                            {course.originalPrice}
+                            <Bn content={course.originalPrice}/>
                           </p>
                           <p className="text-sm text-gray-500">
                             Original Price
@@ -79,7 +80,7 @@ const Slider = () => {
                         </div>
                         <div>
                           <p className="text-2xl font-bold text-green-600">
-                            {course.discountedPrice}
+                            <Bn content={course.discountedPrice}/>
                           </p>
                           <p className="text-sm text-gray-500">
                             Discounted Price
