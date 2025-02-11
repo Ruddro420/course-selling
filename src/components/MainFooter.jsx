@@ -30,7 +30,7 @@ const MainFooter = () => {
               <a
                 href="https://wa.me/+8801709533356"
                 target="_blank"
-                className="inline-flex items-center justify-center px-6 py-4 font-semibold text-white hover:text-black transition-all duration-200 bg-[#0BA3C4] rounded-md hover:bg-[#FCD34D] focus:bg-[#FCD34D] mt-7"
+                className="inline-flex items-center justify-center px-6 py-4 font-semibold text-white hover:text-black transition-all duration-200 bg-[#1CC4DF] rounded-md hover:bg-[#FCD34D] focus:bg-[#FCD34D] mt-7"
               >
                 <svg
                   className="w-6 h-6"
@@ -58,7 +58,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     About{" "}
@@ -69,7 +69,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Features{" "}
@@ -80,7 +80,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Works{" "}
@@ -91,7 +91,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Career{" "}
@@ -108,7 +108,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Customer Support{" "}
@@ -119,7 +119,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Delivery Details{" "}
@@ -130,7 +130,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Terms & Conditions{" "}
@@ -141,7 +141,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Privacy Policy{" "}
@@ -158,7 +158,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Free eBooks{" "}
@@ -169,7 +169,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Development Tutorial{" "}
@@ -180,7 +180,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     How to - Blog{" "}
@@ -191,7 +191,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     YouTube Playlist{" "}
@@ -210,7 +210,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Customer Support{" "}
@@ -221,7 +221,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Delivery Details{" "}
@@ -232,7 +232,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Terms & Conditions{" "}
@@ -243,7 +243,7 @@ const MainFooter = () => {
                   <a
                     href="#"
                     title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#0BA3C4] focus:text-[#0BA3C4]"
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Privacy Policy{" "}
@@ -264,7 +264,7 @@ const MainFooter = () => {
               <li>
                 <a
                   href="https://www.facebook.com/brittolearning"
-                  className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#0BA3C4] hover:text-white focus:text-white hover:bg-[#0BA3C4] hover:border-[#0BA3C4] focus:border-[#0BA3C4]"
+                  className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#1CC4DF] hover:text-white focus:text-white hover:bg-[#1CC4DF] hover:border-[#1CC4DF] focus:border-[#1CC4DF]"
                 >
                   <FaFacebookF />
                 </a>
@@ -272,14 +272,14 @@ const MainFooter = () => {
 
               <li>
                 <a href="https://www.instagram.com/brittolearning/"
-                  className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#0BA3C4] hover:text-white focus:text-white hover:bg-[#0BA3C4] hover:border-[#0BA3C4] focus:border-[#0BA3C4]"
+                  className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#1CC4DF] hover:text-white focus:text-white hover:bg-[#1CC4DF] hover:border-[#1CC4DF] focus:border-[#1CC4DF]"
                 >
                   <FaInstagram />
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/company/brittolearning"
-                  className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#0BA3C4] hover:text-white focus:text-white hover:bg-[#0BA3C4] hover:border-[#0BA3C4] focus:border-[#0BA3C4]"
+                  className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#1CC4DF] hover:text-white focus:text-white hover:bg-[#1CC4DF] hover:border-[#1CC4DF] focus:border-[#1CC4DF]"
                 >
                   <FaLinkedinIn />
 
@@ -287,7 +287,7 @@ const MainFooter = () => {
               </li>
               <li>
                 <a href="https://www.youtube.com/@brittolearning"
-                  className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#0BA3C4] hover:text-white focus:text-white hover:bg-[#0BA3C4] hover:border-[#0BA3C4] focus:border-[#0BA3C4]"
+                  className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#1CC4DF] hover:text-white focus:text-white hover:bg-[#1CC4DF] hover:border-[#1CC4DF] focus:border-[#1CC4DF]"
                 >
                   <FaYoutube />
 
@@ -296,21 +296,21 @@ const MainFooter = () => {
 
               <li>
                 <a href="https://www.tiktok.com/@brittolearningbd"
-                  className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#0BA3C4] hover:text-white focus:text-white hover:bg-[#0BA3C4] hover:border-[#0BA3C4] focus:border-[#0BA3C4]"
+                  className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#1CC4DF] hover:text-white focus:text-white hover:bg-[#1CC4DF] hover:border-[#1CC4DF] focus:border-[#1CC4DF]"
                 >
                   <FaTiktok />
                 </a>
               </li>
               <li>
                 <a href="https://www.pinterest.com/brittolearning/"
-                  className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#0BA3C4] hover:text-white focus:text-white hover:bg-[#0BA3C4] hover:border-[#0BA3C4] focus:border-[#0BA3C4]"
+                  className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#1CC4DF] hover:text-white focus:text-white hover:bg-[#1CC4DF] hover:border-[#1CC4DF] focus:border-[#1CC4DF]"
                 >
                   <FaPinterestP />
                 </a>
               </li>
               <li>
                 <a href="https://medium.com/@brittolearning"
-                  className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#0BA3C4] hover:text-white focus:text-white hover:bg-[#0BA3C4] hover:border-[#0BA3C4] focus:border-[#0BA3C4]"
+                  className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#1CC4DF] hover:text-white focus:text-white hover:bg-[#1CC4DF] hover:border-[#1CC4DF] focus:border-[#1CC4DF]"
                 >
                   <FaMediumM />
                 </a>

@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { IoBookOutline } from "react-icons/io5";
 import Bn from "../EnToBn/Bn";
+import Loader from "../Loader/Loader";
 
 const CourseHero = ({course}) => {
   console.log(course);
@@ -21,7 +22,8 @@ const CourseHero = ({course}) => {
           </div>
 
           <div className="md:w-1/2 lg:w-1/3 z-40  pt-20  md:mt-12  flex-shrink-0 hero-cards hero-cards2">
-            <div className="max-w-md pb-4  bg-white  border-gray-200 dark:bg-gray-800 dark:border-gray-700  shadow-lg main-card">
+            {course?(
+              <div className="max-w-md pb-4  bg-white  border-gray-200 dark:bg-gray-800 dark:border-gray-700  shadow-lg main-card">
               <a href="#">
                 {course.intro?(
                   <iframe
@@ -74,6 +76,9 @@ const CourseHero = ({course}) => {
                 </div>
               </div>
             </div>
+            ):(<Loader/>)}
+            
+
           </div>
 
 

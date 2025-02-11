@@ -44,7 +44,7 @@ const CourseSection = ({ courses }) => {
               to={`/course/${course.courseId}`}
               className="p-0 cursor-pointer"
             >
-              <button className="w-full cursor-pointer bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 mt-4">
+              <button className="w-full cursor-pointer bg-[#1CC4DF] text-white py-3 rounded-lg font-semibold hover:bg-yellow-400 hover:text-black transition duration-300 mt-4">
                 Enroll Now
               </button>
             </Link>

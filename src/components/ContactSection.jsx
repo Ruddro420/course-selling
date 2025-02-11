@@ -1,4 +1,61 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
+import SectionLoader from "./Loader/SectionLoader";
+
 const ContactSection = () => {
+  /* Fetch Course Data---------------------------------- */
+
+  const [courses, setCourses] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Fetch testimonials data
+    axios
+      .get("/public/data/Courses.json")
+      .then((response) => {
+        setCourses(response.data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error(
+          "There was an error fetching the testimonials data!",
+          error
+        );
+        setLoading(false);
+      });
+  }, []);
+
+  /* -------------------------------------------------- */
+
+  /* Web3 Form Intigration-------------------------- */
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "daef106c-03a2-4829-80cd-8fcc2727a97f");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    await toast.promise(
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      }).then((res) => res.json()),
+      {
+        loading: "Sending message...",
+        success: "Message sent successfully!",
+        error: "Failed to send message. Try again!",
+      }
+    );
+  };
+
   return (
     <div>
       <section className="py-10 bg-[#FCF8F1] sm:py-16 lg:py-24">
@@ -99,114 +156,128 @@ const ContactSection = () => {
                 <h3 className="text-3xl font-semibold text-center text-gray-900">
                   Send us a message
                 </h3>
+                {/* Contact Form------------------------------ */}
+                <SectionLoader
+                  loading={loading}
+                  section={
+                    <form onSubmit={onSubmit} className="mt-14">
+                      <input
+                        type="hidden"
+                        name="subject"
+                        value="A new contact has recived from brittoLearning.com"
+                      />
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
+                        <div>
+                          <label
+                            htmlFor="name"
+                            className="text-base font-medium text-gray-900"
+                          >
+                            {" "}
+                            Your name{" "}
+                          </label>
+                          <div className="mt-2.5 relative">
+                            <input
+                              type="text"
+                              name="name"
+                              id="name"
+                              placeholder="Enter your full name"
+                              className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
+                            />
+                          </div>
+                        </div>
 
-                <form action="#" method="POST" className="mt-14">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4">
-                    <div>
-                      <label
-                        htmlFor=""
-                        className="text-base font-medium text-gray-900"
-                      >
-                        {" "}
-                        Your name{" "}
-                      </label>
-                      <div className="mt-2.5 relative">
-                        <input
-                          type="text"
-                          name=""
-                          id=""
-                          placeholder="Enter your full name"
-                          className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
-                        />
+                        <div>
+                          <label
+                            htmlFor="email"
+                            className="text-base font-medium text-gray-900"
+                          >
+                            {" "}
+                            Email address{" "}
+                          </label>
+                          <div className="mt-2.5 relative">
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              placeholder="Enter your full name"
+                              className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
+                            />
+                          </div>
+                        </div>
+
+                        <div>
+                          <label
+                            htmlFor="phone"
+                            className="text-base font-medium text-gray-900"
+                          >
+                            {" "}
+                            Phone number{" "}
+                          </label>
+                          <div className="mt-2.5 relative">
+                            <input
+                              type="tel"
+                              name="phone"
+                              id="phone"
+                              placeholder="Enter your full name"
+                              className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
+                            />
+                          </div>
+                        </div>
+                        <div>
+                          <label
+                            htmlFor="course"
+                            className="text-base font-medium text-gray-900"
+                          >
+                            {" "}
+                            Company name{" "}
+                          </label>
+                          <div className="mt-2.5 relative">
+                            <select
+                              className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
+                              name="course"
+                              id="course"
+                            >
+                              <option value="">Select Targated Course</option>
+                              {courses.map((course, index) => (
+                                <option key={index} value={course.title}>
+                                  {course.title}
+                                </option>
+                              ))}
+                            </select>
+                          </div>
+                        </div>
+
+                        <div className="sm:col-span-2">
+                          <label
+                            htmlFor="message"
+                            className="text-base font-medium text-gray-900"
+                          >
+                            {" "}
+                            Message{" "}
+                          </label>
+                          <div className="mt-2.5 relative">
+                            <textarea
+                              name="message"
+                              id="message"
+                              placeholder="Enter Your Messege"
+                              className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:border-blue-600 caret-blue-600"
+                              rows="4"
+                            ></textarea>
+                          </div>
+                        </div>
+
+                        <div className="sm:col-span-2">
+                          <button
+                            type="submit"
+                            className="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700"
+                          >
+                            Send
+                          </button>
+                        </div>
                       </div>
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor=""
-                        className="text-base font-medium text-gray-900"
-                      >
-                        {" "}
-                        Email address{" "}
-                      </label>
-                      <div className="mt-2.5 relative">
-                        <input
-                          type="email"
-                          name=""
-                          id=""
-                          placeholder="Enter your full name"
-                          className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor=""
-                        className="text-base font-medium text-gray-900"
-                      >
-                        {" "}
-                        Phone number{" "}
-                      </label>
-                      <div className="mt-2.5 relative">
-                        <input
-                          type="tel"
-                          name=""
-                          id=""
-                          placeholder="Enter your full name"
-                          className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label
-                        htmlFor=""
-                        className="text-base font-medium text-gray-900"
-                      >
-                        {" "}
-                        Company name{" "}
-                      </label>
-                      <div className="mt-2.5 relative">
-                        <input
-                          type="text"
-                          name=""
-                          id=""
-                          placeholder="Enter your full name"
-                          className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="sm:col-span-2">
-                      <label
-                        htmlFor=""
-                        className="text-base font-medium text-gray-900"
-                      >
-                        {" "}
-                        Message{" "}
-                      </label>
-                      <div className="mt-2.5 relative">
-                        <textarea
-                          name=""
-                          id=""
-                          placeholder=""
-                          className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:border-blue-600 caret-blue-600"
-                          rows="4"
-                        ></textarea>
-                      </div>
-                    </div>
-
-                    <div className="sm:col-span-2">
-                      <button
-                        type="submit"
-                        className="inline-flex items-center justify-center w-full px-4 py-4 mt-2 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700"
-                      >
-                        Send
-                      </button>
-                    </div>
-                  </div>
-                </form>
+                    </form>
+                  }
+                />
               </div>
             </div>
           </div>

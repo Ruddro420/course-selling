@@ -36,12 +36,17 @@ const Slider = () => {
             <Swiper
               modules={[Navigation, Autoplay]}
               spaceBetween={50}
-              slidesPerView={3}
+              slidesPerView={3} // Default view
               navigation
               onSlideChange={() => console.log("slide change")}
               onSwiper={(swiper) => console.log(swiper)}
               loop={true}
-              Autoplay={{ delay: 200 }}
+              autoplay={{ delay: 2500 }}
+              breakpoints={{
+                320: { slidesPerView: 1 }, // Mobile (Small screens)
+                768: { slidesPerView: 2 }, // Tablets
+                1024: { slidesPerView: 3 }, // Desktops
+              }}
             >
               {courses.map((course, index) => (
                 <SwiperSlide key={index}>
@@ -85,7 +90,7 @@ const Slider = () => {
                         to={`/course/${course.courseId}`}
                         className="p-0 cursor-pointer"
                       >
-                        <button className="w-full cursor-pointer bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 mt-4">
+                        <button className="w-full cursor-pointer bg-[#0BA3C4] hover:text-black text-white py-3 rounded-lg font-semibold hover:bg-yellow-400 transition duration-300 mt-4">
                           Enroll Now
                         </button>
                       </Link>
