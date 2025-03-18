@@ -1,0 +1,87 @@
+@import "tailwindcss";
+/* Hind Siliguri Font */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+/* Basic Setup */
+body {
+  font-family: "Hind Siliguri", serif !important;
+}
+
+.course {
+  padding-top: 4rem;
+}
+
+.main-card {
+  border: 5px solid white;
+  width: 400px;
+}
+
+.hero-cards {
+  margin-top: 200px;
+}
+
+.card-vedio {
+  height: 200px;
+}
+
+
+.sylebus {
+  width: 616px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0BA3C4 !important;
+}
+
+@media(max-width:768px) {
+
+  .course-hero-section {
+
+    height: 550px;
+    margin-bottom: 400px;
+  }
+
+  .course-hero {
+    margin-top: 330px;
+  }
+
+  .hero-cards {
+    margin-top: 0px;
+    padding-top: 10px;
+  }
+
+  .hero-cards2 {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+  .main-card {
+    border: 5px solid white;
+    width: 350px;
+    margin: auto;
+  }
+
+  .sylebus {
+    width: 360px;
+  }
+
+}
+
+/* Drive Preview None */
+.ndfHFb-c4YZDc-i5oIFb.ndfHFb-c4YZDc-e1YmVc .ndfHFb-c4YZDc-Wrql6b-AeOLfc-b0t70b .ndfHFb-c4YZDc-GSQQnc-LgbsSe {
+  margin-left: 0;
+  display: none!important;
+  background-color: #fff;
+}
+
+.video-player{
+  position: relative;
+}
+.overlary{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  height: 60px;
+}
