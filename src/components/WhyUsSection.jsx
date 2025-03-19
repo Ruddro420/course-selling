@@ -14,7 +14,7 @@ const WhyUsSection = () => {
                             <div className="p-8">
                                 <div className="flex flex-col justify-center items-center">
                                     <img className="flex-shrink-0 w-20 h-auto mb-5" src="/public/img/whyus/online-learning.png" alt="" />
-                                    <div className="ml-5 mr-auto">
+                                    <div className="">
                                         <p className="text-3xl font-semibold text-black">অভিজ্ঞ ও পেশাদার মেন্টর
                                         </p>
                                     </div>
@@ -28,7 +28,7 @@ const WhyUsSection = () => {
                             <div className="p-8">
                                 <div className="flex flex-col justify-center items-center">
                                     <img className="flex-shrink-0 w-20 h-auto mb-5" src="/public/img/whyus/self-employed.png" alt="" />
-                                    <div className="ml-5 mr-auto">
+                                    <div className="">
                                         <p className="text-3xl  font-semibold text-black">স্কিল ডেভেলপমেন্ট
                                         </p>
                                     </div>
@@ -42,7 +42,7 @@ const WhyUsSection = () => {
                             <div className="p-8">
                                 <div className="flex flex-col justify-center items-center">
                                     <img className="flex-shrink-0 w-20 h-auto mb-5" src="/public/img/whyus/archive.png" alt="" />
-                                    <div className="ml-5 mr-auto">
+                                    <div className="">
                                         <p className="text-3xl font-semibold text-black">প্রয়োজনীয় রিসোর্স সংগ্রহ</p>
                                     </div>
                                     <p className=" text-xl leading-relaxed text-center text-black mt-7">মার্কেটের অভিজ্ঞ ও প্রফেশনাল মেন্টর কর্তৃক প্রতিটি কোর্স তৈরি করা হয়েছে।</p>
@@ -55,7 +55,7 @@ const WhyUsSection = () => {
                             <div className="p-8">
                                 <div className="flex flex-col justify-center items-center">
                                     <img className="flex-shrink-0 w-20 h-auto mb-5" src="/public/img/whyus/document.png" alt="" />
-                                    <div className="ml-5 mr-auto">
+                                    <div className="">
                                         <p className="text-3xl font-semibold text-black">সার্টিফিকেশন</p>
                                     </div>
                                     <p className=" text-xl leading-relaxed text-center text-black mt-7">মার্কেটের অভিজ্ঞ ও প্রফেশনাল মেন্টর কর্তৃক প্রতিটি কোর্স তৈরি করা হয়েছে।</p>
@@ -68,7 +68,7 @@ const WhyUsSection = () => {
                             <div className="p-8">
                                 <div className="flex flex-col justify-center items-center">
                                     <img className="flex-shrink-0 w-20 h-auto mb-5" src="/public/img/whyus/software.png" alt="" />
-                                    <div className="ml-5 mr-auto">
+                                    <div className="">
                                         <p className="text-3xl font-semibold text-black">ক্যারিয়ার সাপোর্ট</p>
                                     </div>
                                     <p className=" text-xl leading-relaxed text-center text-black mt-7">মার্কেটের অভিজ্ঞ ও প্রফেশনাল মেন্টর কর্তৃক প্রতিটি কোর্স তৈরি করা হয়েছে।</p>
@@ -81,7 +81,7 @@ const WhyUsSection = () => {
                             <div className="p-8">
                                 <div className="flex flex-col justify-center items-center">
                                     <img className="flex-shrink-0 w-20 h-auto mb-5" src="/public/img/whyus/sync.png" alt="" />
-                                    <div className="ml-5 mr-auto">
+                                    <div className="">
                                         <p className="text-3xl font-semibold text-black">আপডেটেড কোর্স মডিউল</p>
                                     </div>
                                     <p className=" text-xl leading-relaxed text-center text-black mt-7">মার্কেটের অভিজ্ঞ ও প্রফেশনাল মেন্টর কর্তৃক প্রতিটি কোর্স তৈরি করা হয়েছে।</p>

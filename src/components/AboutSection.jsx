@@ -2,7 +2,7 @@
 const AboutSection = () => {
     return (
         <div>
-            <section className="pt-10 bg-white sm:pt-16 lg:pt-24 mb-10 pb-20">
+            <section className="pt-12 bg-white sm:pt-16 lg:pt-24 mb-10 pb-8 sm:pb-16 lg:pb-24">
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="max-w-6xl mx-auto text-center">
                         <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">বৃত্ত লার্নিং কি?</h2>

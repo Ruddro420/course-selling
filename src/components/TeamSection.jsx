@@ -6,7 +6,7 @@ const TeamSection = () => {
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="max-w-2xl mx-auto text-center">
                         <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">আমাদের মেন্টরস</h2>
-                        <p className="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600">তিটি মেন্টর নিজ নিজ ক্ষেত্রে অভিজ্ঞ এবং দক্ষ। তারা শিক্ষার্থীদের শেখার প্রতি আগ্রহ জাগিয়ে তোলে এবং প্রতিটি পাঠকে বাস্তবজীবনের সাথে যুক্ত করে শেখানোর চেষ্টা করে।</p>
+                        <p className=" mx-auto mt-4 text-base leading-relaxed text-gray-600">তিটি মেন্টর নিজ নিজ ক্ষেত্রে অভিজ্ঞ এবং দক্ষ। তারা শিক্ষার্থীদের শেখার প্রতি আগ্রহ জাগিয়ে তোলে এবং প্রতিটি পাঠকে বাস্তবজীবনের সাথে যুক্ত করে শেখানোর চেষ্টা করে।</p>
                     </div>
 
                     <div className="grid grid-cols-2 mt-8 text-center sm:mt-16 lg:mt-20 sm:grid-cols-4 gap-y-8 lg:grid-cols-9 gap-x-0">

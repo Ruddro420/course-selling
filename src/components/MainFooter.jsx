@@ -5,6 +5,7 @@ import {
   FaMediumM,
   FaPinterestP,
   FaTiktok,
+  FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -30,23 +31,10 @@ const MainFooter = () => {
               <a
                 href="https://wa.me/+8801709533356"
                 target="_blank"
-                className="inline-flex items-center justify-center px-6 py-4 font-semibold text-white hover:text-black transition-all duration-200 bg-[#1CC4DF] rounded-md hover:bg-[#FCD34D] focus:bg-[#FCD34D] mt-7"
-              >
-                <svg
-                  className="w-6 h-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                  />
-                </svg>
-                Start Live Chat
+                className="inline-flex items-center justify-center px-6 py-4 font-semibold text-white hover:text-black transition-all duration-200 bg-[#06b44e] rounded-md hover:bg-[#FCD34D] focus:bg-[#FCD34D] mt-7"
+              >          
+                <FaWhatsapp className="w-6 h-6 me-2" />
+                Text Us Here
               </a>
             </div>
 

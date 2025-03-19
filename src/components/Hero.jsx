@@ -6,15 +6,15 @@ const Hero = () => {
     <div>
       <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-24">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-            <div>
-              <p className="font-semibold tracking-wider leading-tight text-[#0BA3C4] uppercase text-2xl">
+          <div className="grid items-center grid-cols-1 lg:gap-12 lg:grid-cols-2">
+            <div className="order-2 lg:order-1 mt-0 lg:mt-0 pb-6 lg:pb-0">
+              <p className="font-semibold tracking-wider leading-tight text-[#0BA3C4] uppercase lg:text-3xl text-2xl mt-20 lg:mt-6">
                 চলো নতুন কিছু করা যাক
               </p>
-              <h1 className="mt-4 text-3xl font-bold leading-36 text-black lg:mt-8 sm:text-6xl xl:text-8xl">
+              <h1 className="mt-4 text-4xl lg:text-2xl font-bold lg:leading-28 leading-12 text-black lg:mt-4 sm:text-6xl xl:text-7xl">
                 স্কিল শিখে গড়ুন আপনার স্বাধীন ভবিষ্যৎ!
               </h1>
-              <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
+              <p className="mt-4 text-base text-black lg:mt-4 mb-4 sm:text-xl">
                 নিজের স্কিল কে ডেভেলপ করতে এবং নিজেকে সবসময় সবার থেকে এগিয়ে
                 রাখতে এখনই ইনরোল করে ফেলো তোমার পছন্দের কোর্সটি।{" "}
               </p>
@@ -28,7 +28,7 @@ const Hero = () => {
               </Link>
             </div>
 
-            <div>
+            <div className="order-1 lg:order-2 mt-20 lg:mt-0">
               <img className="w-[90%] m-auto" src="../../img/hero.png" alt="" />
             </div>
           </div>
