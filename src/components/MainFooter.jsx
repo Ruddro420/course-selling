@@ -31,7 +31,7 @@ const MainFooter = () => {
               <a
                 href="https://wa.me/+8801709533356"
                 target="_blank"
-                className="inline-flex items-center justify-center px-6 py-4 font-semibold text-white hover:text-black transition-all duration-200 bg-[#06b44e] rounded-md hover:bg-[#FCD34D] focus:bg-[#FCD34D] mt-7"
+                className="inline-flex items-center justify-center px-6 py-4 font-semibold text-white hover:text-black transition-all duration-200 bg-[#0CC0DF] rounded-md hover:bg-[#FCD34D] focus:bg-[#FCD34D] mt-7"
               >          
                 <FaWhatsapp className="w-6 h-6 me-2" />
                 Text Us Here
@@ -48,8 +48,7 @@ const MainFooter = () => {
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
-                    {" "}
-                    About{" "}
+                    হোম
                   </a>
                 </li>
 
@@ -59,8 +58,7 @@ const MainFooter = () => {
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
-                    {" "}
-                    Features{" "}
+                    আমাদের সম্পর্কে
                   </a>
                 </li>
 
@@ -70,8 +68,7 @@ const MainFooter = () => {
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
-                    {" "}
-                    Works{" "}
+                    কোর্স সমূহ
                   </a>
                 </li>
 
@@ -81,8 +78,7 @@ const MainFooter = () => {
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
-                    {" "}
-                    Career{" "}
+                    যোগাযোগ
                   </a>
                 </li>
               </ul>

@@ -7,7 +7,7 @@ const About = () => {
         <div className="">
           {/* ----------- */}
 
-          <section className="py-10 bg-white sm:py-16 lg:py-24">
+          <section className="py-20 bg-white sm:py-16 lg:py-24">
             <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
               <div className="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-20">
                 <div>
@@ -26,16 +26,16 @@ const About = () => {
                   </p>
                 </div>
 
-                <div className="pl-12 sm:pr-0">
+                <div className="lg:pl-12 pr-14 sm:pr-0">
                   <div className="relative max-w-xs mb-12">
                     <img
-                      className="object-bottom rounded-md"
+                      className="object-bottom rounded-md scale-90 lg:scale-105"
                       src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/man-eating-noodles.jpg"
                       alt=""
                     />
 
                     <img
-                      className="absolute origin-bottom-right scale-75 rounded-md -bottom-12 -right-12"
+                      className="absolute origin-bottom-right scale-60 lg:scale-75 rounded-md -bottom-12 -right-12"
                       src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/smiling-businessman.jpg"
                       alt=""
                     />

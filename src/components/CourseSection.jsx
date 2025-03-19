@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const CourseSection = ({ courses }) => {
   return (
     <div
-      className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-transform duration-300 transform`}
+      className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-transform duration-300 transform lg:pt-6 pt-12 lg:pb-0 pb-0`}
     >
       {courses.map((course, index) => (
         <div
