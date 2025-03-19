@@ -3,12 +3,16 @@ import { IoBookOutline } from "react-icons/io5";
 import Bn from "../EnToBn/Bn";
 import Loader from "../Loader/Loader";
 import toast from "react-hot-toast";
-import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
+import { DataContext } from "../../context/DataContext";
 
 const CourseHero = ({ course }) => {
   const navigate = useNavigate()
   const [isOpen, setIsOpen] = useState(false);
+
+  // load context
+  const {  user, loginData } = useContext(DataContext);
 
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
@@ -23,22 +27,16 @@ const CourseHero = ({ course }) => {
       return;
     } else {
       // Store the number in localStorage
-      localStorage.setItem("signUp", number);
+      loginData(number)
       toast.success("You have successfully registered.");
       closeModal();
       //navigate("/course-content");
     }
   };
-
-  // get local storage data
-  const signUpNumber = localStorage.getItem("signUp");
   // redirect to course content page
   const courseContent = () => {
     navigate("/course-content");
   }
-
-
-
 
   return (
     <div className="">
@@ -89,7 +87,7 @@ const CourseHero = ({ course }) => {
                         {course.title}
                       </p>
                       {
-                        signUpNumber ? <button
+                        user ? <button
                           onClick={courseContent}
                           type="button"
                           className="bg-[#0BA3C4] hover:bg-[#FCD34D] hover:text-black text-md font-semibold whitespace-nowrap text-center md:w-full w-full rounded py-2 lg:py-2 text-white cursor-pointer">

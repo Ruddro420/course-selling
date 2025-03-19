@@ -1,6 +1,12 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { DataContext } from "../context/DataContext";
 
 const Header = () => {
+  // get local storage data
+  // load context
+  const { user } = useContext(DataContext);
+
   const menuContent = [
     {
       title: "হোম",
@@ -31,8 +37,13 @@ const Header = () => {
             />
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <button type="button" className="text-white hover:text-black bg-[#0CC0DF] hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-[#0CC0DF] dark:hover:bg-yellow-300 dark:focus:ring-yellow-300"><Link to={"/login"}>লগইন করুন</Link></button>
-          
+            {
+              user ? <button type="button" className="text-white hover:text-black bg-[#0CC0DF] hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-[#0CC0DF] dark:hover:bg-yellow-300 dark:focus:ring-yellow-300"><Link to={"/account"}>Dashboard</Link></button>
+                :
+                <button type="button" className="text-white hover:text-black bg-[#0CC0DF] hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-[#0CC0DF] dark:hover:bg-yellow-300 dark:focus:ring-yellow-300"><Link to={"/login"}>লগইন করুন</Link></button>
+            }
+
+
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"

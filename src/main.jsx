@@ -14,6 +14,7 @@ import AllCourses from './pages/AllCourses.jsx';
 import About from './pages/About.jsx';
 import ContactUs from './pages/ContactUs.jsx';
 import CourseContent from './pages/CourseContent.jsx';
+import Account from './pages/Account.jsx';
 
 const router = createBrowserRouter([
   {
@@ -43,7 +44,11 @@ const router = createBrowserRouter([
       {
         path: '/course-content',
         element: <CourseContent />
-      }
+      },
+      {
+        path: '/account',
+        element: <Account />
+      },
     ]
   },
   {
