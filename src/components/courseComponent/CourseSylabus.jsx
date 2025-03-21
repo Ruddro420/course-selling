@@ -6,7 +6,7 @@ const CourseSylabus = ({ course }) => {
 
   return (
     <div>
-      <div className="container mx-auto  mt-10 max-w-screen-xl px-6 md:px-12 mb-10">
+      <div className="container mx-auto mt-  lg:mt-10 max-w-screen-xl px-6 md:px-12 mb-10">
         <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <h2 className="text-2xl mb-2 text-black font-bold">কোর্স সিলেবাস</h2>
         </div>
@@ -20,8 +20,7 @@ const CourseSylabus = ({ course }) => {
                     <div key={topicIndex}>
                       <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
                         {topic}
-                      </p>
-                      
+                      </p>                    
                       {topicIndex !== topics.length - 1 && <hr />}
                     </div>
                   ))}

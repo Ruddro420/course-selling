@@ -40,11 +40,11 @@ const CourseHero = ({ course }) => {
 
   return (
     <div className="">
-      <div className="bg-gray-900 py-20 course-hero-section  h-80 flex items-center justify-between mx-auto p-4 lg:py-56">
+      <div className="bg-gray-900 py-80 course-hero-section  h-80 flex items-center justify-between mx-auto p-4 lg:py-56">
         <div className="container mx-auto mt-10 max-w-screen-xl md:px-12">
           <div className="flex flex-col course-hero md:flex-row md:gap-12">
             <div className="md:w-1/2 lg:w-2/3 pt-20 px-6 flex-grow hero-cards">
-              <h1 className=" md:text-4xl text-xl text-white font-bold mb-6">
+              <h1 className=" md:text-4xl text-3xl text-white font-bold mb-6">
                 {course.title}
               </h1>
               <p className="text-md md:text-xl lg:text-xl text-gray-400 mb-8">
@@ -78,7 +78,7 @@ const CourseHero = ({ course }) => {
                     <div className="p-5">
 
                       <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <span className="text-4xl font-semibold text-white tracking-tighter">
+                        <span className="text-4xl font-semibold text-black tracking-tighter">
                           <Bn content={course.discountedPrice ? course.discountedPrice : course.originalPrice} />
                         </span>
                       </h5>
@@ -104,13 +104,13 @@ const CourseHero = ({ course }) => {
 
                     {/* Course Features----------- */}
                     <div className="">
-                      <h3 className="text-lg  font-bold text-slate-200 tracking-wide uppercase px-6 py-2">
+                      <h3 className="text-lg  font-bold text-black tracking-wide uppercase px-6 py-2">
                         এই কোর্সে যা থাকছে
                       </h3>
                       {course.features.map((feature, index) => (
                         <li key={index} className="flex space-x-3 items-center px-6">
                           <IoBookOutline className="flex-shrink-0  h-5 w-5 text-[#0BA3C4]" />
-                          <span className="text-base text-slate-200">{feature}</span>
+                          <span className="text-base text-black">{feature}</span>
                         </li>
                       ))}
                       {/*  */}
@@ -129,7 +129,7 @@ const CourseHero = ({ course }) => {
           onClick={closeModal}
         >
           <div
-            className="relative m-4 p-4 w-2/5 min-w-[20%] max-w-[30%] rounded-lg bg-white shadow-sm"
+            className="relative m-4 p-4 w-2/5 lg:min-w-[20%] min-w-[85%]  max-w-[30%] rounded-lg bg-white shadow-sm"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex shrink-0 items-center pb-4 text-xl font-medium text-slate-800">
