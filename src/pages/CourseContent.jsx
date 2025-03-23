@@ -26,11 +26,11 @@ export default function CourseContent() {
 
     return (
         <>
-            <section className="bg-opacity-30 py-10 sm:py-16 lg:py-24">
+            <section className="bg-opacity-30 py-24 sm:py-16 lg:py-24">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="flex h-screen">
+                    <div className="flex lg:flex-row flex-col lg:h-screen">
                         {/* Sidebar */}
-                        <div className="w-1/3 bg-white p-5 overflow-auto rounded-md border-2 border-gray-200 max-h-fit">
+                        <div className="lg:w-1/3 bg-white mb-5 p-5 overflow-auto rounded-md border-2 border-gray-200 max-h-fit">
                             <h2 className="text-xl font-bold mb-4">Course Content</h2>
                             <ul>
                                 {courses.map((course, index) => (
