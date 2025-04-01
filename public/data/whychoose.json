@@ -1,43 +1,38 @@
-{
-    "title": "বৃত্ত লার্নিং কেনো ?",
-    "description": "আমাদের কোর্স সবার থেকে আলাদা কেনো সেটি বুঝতে হলে আমাদের ফ্রি কোর্সগুলোই যথেষ্ট",
-    "features": [
-      {
-        "name": "Gmail",
-        "description": "Direct Integration",
-        "image": "https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/gmail-logo.png",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-      },
-      {
-        "name": "Slack",
-        "description": "Direct Integration",
-        "image": "https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/slack-logo.png",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-      },
-      {
-        "name": "Shopify",
-        "description": "Direct Integration",
-        "image": "https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/shopify-logo.png",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-      },
-      {
-        "name": "Intercom",
-        "description": "Direct Integration",
-        "image": "https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/intercom-logo.png",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-      },
-      {
-        "name": "Twitter",
-        "description": "Direct Integration",
-        "image": "https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/twitter-logo.png",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-      },
-      {
-        "name": "Sketch",
-        "description": "Direct Integration",
-        "image": "https://cdn.rareblocks.xyz/collection/celebration/images/integration/3/sketch-logo.png",
-        "details": "Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore."
-      }
-    ]
+[
+  {
+    "id": 1,
+    "image": "/public/img/whyus/online-learning.png",
+    "title": "অভিজ্ঞ ও পেশাদার মেন্টর",
+    "description": "মার্কেটের অভিজ্ঞ ও প্রফেশনাল মেন্টর কর্তৃক প্রতিটি কোর্স তৈরি করা হয়েছে।"
+  },
+  {
+    "id": 2,
+    "image": "/public/img/whyus/self-employed.png",
+    "title": "স্কিল ডেভেলপমেন্ট",
+    "description": "শুধু থিওরিটিক্যাল না, বাস্তবভিত্তিক দক্ষতা উন্নয়নের উপর জোর দেওয়া হয়।"
+  },
+  {
+    "id": 3,
+    "image": "/public/img/whyus/archive.png",
+    "title": "প্রয়োজনীয় রিসোর্স সংগ্রহ",
+    "description": "প্রতিটি কোর্সের সাথে প্রয়োজনীয় রিসোর্স ও প্র্যাকটিস ম্যাটেরিয়াল প্রদান করা হয়।"
+  },
+  {
+    "id": 4,
+    "image": "/public/img/whyus/document.png",
+    "title": "সার্টিফিকেশন",
+    "description": "কোর্স শেষে স্বীকৃত সার্টিফিকেট প্রদান করা হয়, যা ক্যারিয়ারে সহায়ক।"
+  },
+  {
+    "id": 5,
+    "image": "/public/img/whyus/software.png",
+    "title": "ক্যারিয়ার সাপোর্ট",
+    "description": "শেখার পরবর্তী ধাপে চাকরি বা ফ্রিল্যান্সিংয়ে গাইডলাইন ও সহায়তা প্রদান করা হয়।"
+  },
+  {
+    "id": 6,
+    "image": "/public/img/whyus/sync.png",
+    "title": "আপডেটেড কোর্স মডিউল",
+    "description": "ট্রেন্ড ও মার্কেটের চাহিদা অনুযায়ী নিয়মিত কোর্স কনটেন্ট আপডেট করা হয়।"
   }
-  
+]
