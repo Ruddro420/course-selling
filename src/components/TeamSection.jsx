@@ -12,7 +12,7 @@ const TeamSection = () => {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-2 mt-8 text-center justify-center sm:mt-16 lg:mt-20 sm:grid-cols-4 gap-y-8 lg:grid-cols-3 gap-x-0">
+                    <div className="grid grid-cols-2 mt-8 text-center sm:mt-16 lg:mt-20 sm:grid-cols-4 gap-y-8 lg:grid-cols-3 gap-x-0">
                         {teamData.map((member, index) => (
                             <div key={index}>
                                 <img

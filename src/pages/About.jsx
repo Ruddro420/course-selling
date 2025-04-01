@@ -14,7 +14,7 @@ const About = () => {
                   <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
                     বৃত্ত লার্নিং কি?
                   </h2>
-                  <p className="mt-4 text-base leading-relaxed text-gray-600">
+                  <p className="mt-4 text-lg leading-relaxed text-gray-600">
                     বৃত্ত লার্নিং একটি অনলাইন কোর্স প্ল্যাটফর্ম, যেখানে আমরা
                     মানুষকে দক্ষ করে গড়ে তোলার লক্ষ্যে কাজ করি। আমাদের বিশ্বাস,
                     সঠিক জ্ঞান এবং দক্ষতা অর্জনের মাধ্যমে যে কেউ নিজের জীবনে বড়
@@ -27,18 +27,13 @@ const About = () => {
                 </div>
 
                 <div className="lg:pl-12 pr-14 sm:pr-0">
-                  <div className="relative max-w-xs mb-12">
+                  <div className="relative max-w-4xl mb-12">
                     <img
-                      className="object-bottom rounded-md scale-90 lg:scale-105"
-                      src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/man-eating-noodles.jpg"
+                      className="object-bottom rounded-md  scale-90 lg:scale-105"
+                      src="../../img/aboutus.jpg"
                       alt=""
                     />
 
-                    <img
-                      className="absolute origin-bottom-right scale-60 lg:scale-75 rounded-md -bottom-12 -right-12"
-                      src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/smiling-businessman.jpg"
-                      alt=""
-                    />
                   </div>
                 </div>
               </div>
