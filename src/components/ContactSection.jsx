@@ -63,11 +63,10 @@ const ContactSection = () => {
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">
-              Contact us
+            যোগাযোগ
             </h2>
             <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-500">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis.
+            প্রশ্ন বা সহায়তার প্রয়োজন হলে আমাদের সঙ্গে সহজেই যোগাযোগ করতে পারেন। আমাদের সাপোর্ট টিম সর্বদা প্রস্তুত আপনাকে সহায়তা করতে।
             </p>
           </div>
 

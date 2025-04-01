@@ -1,47 +1,27 @@
 [
     {
-      "name": "Jenny Wilson",
-      "role": "Founder",
+      "name": "Nibir",
+      "role": "Digital Marketer",
       "image": "../../img/1.jpg"
     },
     {
-      "name": "Darrell Steward",
-      "role": "CTO",
-      "image": "https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-2.jpg"
+      "name": "Md. Tauhidul Islam Shadhin",
+      "role": "Web Developer",
+      "image": "../../img/2.jpg"
     },
     {
-      "name": "Bessie Cooper",
-      "role": "CMO",
-      "image": "https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-3.jpg"
+      "name": "Samiul Nir",
+      "role": "Graphic Designer",
+      "image": "../../img/3.jpg"
     },
     {
-      "name": "Arlene McCoy",
-      "role": "Senior Developer",
-      "image": "https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-4.jpg"
+      "name": "Md. Tareak Noman Dipto",
+      "role": "Web Developer",
+      "image": "../../img/4.jpg"
     },
     {
-      "name": "Brooklyn Simmons",
-      "role": "Product Designer",
-      "image": "https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-5.jpg"
-    },
-    {
-      "name": "Jerome Bell",
-      "role": "Customer Success",
-      "image": "https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-6.jpg"
-    },
-    {
-      "name": "Dianne Russell",
-      "role": "Front-end Developer",
-      "image": "https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-7.jpg"
-    },
-    {
-      "name": "Kristin Watson",
-      "role": "H.R",
-      "image": "https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-8.jpg"
-    },
-    {
-      "name": "Eleanor Pena",
-      "role": "UI Designer",
-      "image": "https://cdn.rareblocks.xyz/collection/celebration/images/team/3/team-avatar-9.jpg"
+      "name": "Nirob",
+      "role": "Graphic Designer",
+      "image": "../../img/5.jpg"
     }
   ]
