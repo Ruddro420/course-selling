@@ -59,23 +59,20 @@ const LoginPage = () => {
 
     // submit otp
     const submitOTP = (e) => {
+        console.log(getNum);
+
         e.preventDefault();
         const otpNumber = e.target.otp_number.value;
         if (otpNumber == otp) {
-            // login check for post data
-            const findUser = getUsers.data?.find(item => item.number == getNum);
-            if (!findUser) {
-                axios.post(`${BASE_URL}/user`, {
-                    number: getNum
+            axios.post(`${BASE_URL}/user`, {
+                number: getNum
+            })
+                .then(function (response) {
+                    console.log(response);
                 })
-                    .then(function (response) {
-                        console.log(response);
-                    })
-                    .catch(function (error) {
-                        console.log(error);
-                    });
-            }
-
+                .catch(function (error) {
+                    console.log(error);
+                });
             toast.success('Register Successfully');
             localStorage.setItem("signUp", JSON.stringify(getNum));
             userLoginCheck()

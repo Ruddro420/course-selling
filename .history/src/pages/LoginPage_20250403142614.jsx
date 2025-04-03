@@ -63,7 +63,7 @@ const LoginPage = () => {
         const otpNumber = e.target.otp_number.value;
         if (otpNumber == otp) {
             // login check for post data
-            const findUser = getUsers.data?.find(item => item.number == getNum);
+            const findUser = getUsers.find(item => item.number == getNum);
             if (!findUser) {
                 axios.post(`${BASE_URL}/user`, {
                     number: getNum
