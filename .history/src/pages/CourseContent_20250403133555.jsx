@@ -61,6 +61,12 @@ export default function CourseContent() {
         }
     };
 
+    // Finish Course and Redirect to Certificate
+    const handleFinishCourse = () => {
+        toast.success("Course Completed! Redirecting to certificate...");
+        navigate(`/certificate/${id}`);
+    };
+
     return (
         <>
             {

@@ -59,7 +59,7 @@ export const DataProvider = ({ children }) => {
 
     // get data
     useEffect(() => {
-        userLoginCheck()
+
         fetchPurchasedCourses()
     }, [user]);
     // logout data
@@ -90,7 +90,7 @@ export const DataProvider = ({ children }) => {
 
 
     return (
-        <DataContext.Provider value={{ setUser, user, loginData, logOut, otp, getCourseApiData, loading, purchasedCourses, fetchPurchasedCourses ,userLoginCheck}}>
+        <DataContext.Provider value={{ setUser, user, loginData, logOut, otp, getCourseApiData, loading, purchasedCourses, fetchPurchasedCourses }}>
             {children}
         </DataContext.Provider>
     );

@@ -9,7 +9,7 @@ const Checkout = () => {
     const { id } = useParams();
     const [data, setData] = useState(null);
     const [user, setUser] = useState(null);
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
     const [formData, setFormData] = useState({
         name: "",
         address: "",

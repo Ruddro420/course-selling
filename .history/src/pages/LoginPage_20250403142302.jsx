@@ -36,11 +36,6 @@ const LoginPage = () => {
         getUserData()
     }, [userPhone]);
 
-    console.log(getUsers);
-
-
-    // sign in
-
     const signUp = (e) => {
         e.preventDefault();
         const number = e.target.number.value;

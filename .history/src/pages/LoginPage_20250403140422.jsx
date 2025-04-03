@@ -9,37 +9,19 @@ const LoginPage = () => {
     const location = useLocation();  // To get the previous location (if any)
 
     const [getNum, setGetNum] = useState('');
-    const [getUsers, setGetUsers] = useState([]);
-    const { loginData, otp, userLoginCheck } = useContext(DataContext);
-    const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+    const { loginData, otp } = useContext(DataContext);
 
     // Track the page the user was on before being redirected to the login page
     const from = location.state?.from?.pathname || "/"; // If no previous location, default to "/"
     const userPhone = localStorage.getItem("signUp");
 
-    const getUserData = () => {
-        axios.get(`${BASE_URL}/user/get`)
-            .then((res) => {
-                setGetUsers(res.data);
-                // setLoading(false)
-            }).catch((err) => {
-                console.log(err);
-            })
-    }
-
     // Redirect to home if already logged in
     useEffect(() => {
         if (userPhone) {
-            // toast.success('Already Login!')
+            toast.success('Already Login!')
             navigate('/');
         }
-        getUserData()
-    }, [userPhone]);
-
-    console.log(getUsers);
-
-
-    // sign in
+    }, [userPhone, navigate]);
 
     const signUp = (e) => {
         e.preventDefault();
@@ -60,11 +42,11 @@ const LoginPage = () => {
     // submit otp
     const submitOTP = (e) => {
         console.log(getNum);
-
+        
         e.preventDefault();
         const otpNumber = e.target.otp_number.value;
         if (otpNumber == otp) {
-            axios.post(`${BASE_URL}/user`, {
+            axios.post('/user', {
                 number: getNum
             })
                 .then(function (response) {
@@ -75,7 +57,6 @@ const LoginPage = () => {
                 });
             toast.success('Register Successfully');
             localStorage.setItem("signUp", JSON.stringify(getNum));
-            userLoginCheck()
             // After successful login, redirect to the previous page or home page
             navigate(from, { replace: true });
         } else {

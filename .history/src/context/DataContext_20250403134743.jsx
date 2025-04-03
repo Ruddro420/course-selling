@@ -52,15 +52,10 @@ export const DataProvider = ({ children }) => {
         setUser(data)
     }
 
-    const userLoginCheck = () => {
-        const user = JSON.parse(localStorage.getItem("signUp"));
-        setUser(user);
-    }
-
     // get data
     useEffect(() => {
-        userLoginCheck()
-        fetchPurchasedCourses()
+        const user = JSON.parse(localStorage.getItem("signUp"));
+        setUser(user);
     }, [user]);
     // logout data
 
@@ -90,7 +85,7 @@ export const DataProvider = ({ children }) => {
 
 
     return (
-        <DataContext.Provider value={{ setUser, user, loginData, logOut, otp, getCourseApiData, loading, purchasedCourses, fetchPurchasedCourses ,userLoginCheck}}>
+        <DataContext.Provider value={{ setUser, user, loginData, logOut, otp, getCourseApiData, loading, purchasedCourses, fetchPurchasedCourses }}>
             {children}
         </DataContext.Provider>
     );
