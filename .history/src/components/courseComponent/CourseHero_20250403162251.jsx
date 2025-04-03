@@ -16,22 +16,23 @@ const CourseHero = ({ course }) => {
   const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
   // load context
-  const { loginData, otp,userLoginCheck } = useContext(DataContext);
+  const { loginData, otp } = useContext(DataContext);
 
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
 
   const getUserData = () => {
     axios.get(`${BASE_URL}/user/get`)
-      .then((res) => {
-        setGetUsers(res.data);
-      }).catch((err) => {
-        console.log(err);
-      })
-  }
-  useEffect(() => {
-    getUserData()
-  }, [])
+        .then((res) => {
+            setGetUsers(res.data);
+            // setLoading(false)
+        }).catch((err) => {
+            console.log(err);
+        })
+}
+useEffect(() =>{
+  getUserData()
+},[])
 
   const signUp = (e) => {
     e.preventDefault();
@@ -43,20 +44,11 @@ const CourseHero = ({ course }) => {
       return;
     } else {
       // check account data
-      // login check for post data
-      const findUser = getUsers.data?.find(item => item.number == number);
-      if (findUser) {
-        toast.error('You have already an account in this number. Please login your account and then purchases the course. In same course you can buy only one number.If you buy the same course please register the new number');
-        setTimeout(() => {
-          window.location.href = '/login';
-        }, 3000);
-      } else {
-        loginData(number)
-        setGetNum(number)
-        toast.success("OTP Sent To Your Phone Number");
-        document.getElementById('number').value = ''
-      }
 
+      loginData(number)
+      setGetNum(number)
+      toast.success("OTP Sent To Your Phone Number");
+      document.getElementById('number').value = ''
     }
   };
 
@@ -70,7 +62,6 @@ const CourseHero = ({ course }) => {
       })
         .then(function (response) {
           console.log(response);
-          userLoginCheck()
         })
         .catch(function (error) {
           console.log(error);

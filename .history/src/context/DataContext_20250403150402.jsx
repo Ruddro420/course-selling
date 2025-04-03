@@ -12,7 +12,6 @@ export const DataProvider = ({ children }) => {
     const navigate = useNavigate();
     const [getCourseApiData, setGetCourseApiData] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [courseLoading, setCourseLoading] = useState(true);
     const [purchasedCourses, setPurchasedCourses] = useState([]);
 
     // get course
@@ -30,28 +29,28 @@ export const DataProvider = ({ children }) => {
     }, []);
 
     // set localstorage data after login
-    // const loginData = (data) => {
+    const loginData = (data) => {
 
-    //     const apiKey = "C8X9t0e3OB3I0r479Q2Q";
-    //     const senderId = "8809617625216";
-    //     const generatedOTP = Math.floor(1000 + Math.random() * 9000);
-    //     setOtp(generatedOTP);
+        const apiKey = "C8X9t0e3OB3I0r479Q2Q";
+        const senderId = "8809617625216";
+        const generatedOTP = Math.floor(1000 + Math.random() * 9000);
+        setOtp(generatedOTP);
 
-    //     const message = `Your OTP is: ${generatedOTP}`;
+        const message = `Your OTP is: ${generatedOTP}`;
 
-    //     axios.get(`http://bulksmsbd.net/api/smsapi`, {
-    //         params: {
-    //             api_key: apiKey,
-    //             type: "text",
-    //             number: data,
-    //             senderid: senderId,
-    //             message: message
-    //         }
-    //     })
-    //         .then(response => console.log("OTP Sent!", response))
-    //         .catch(error => console.log("Error Sending OTP", error));
-    //     setUser(data)
-    // }
+        axios.get(`http://bulksmsbd.net/api/smsapi`, {
+            params: {
+                api_key: apiKey,
+                type: "text",
+                number: data,
+                senderid: senderId,
+                message: message
+            }
+        })
+            .then(response => console.log("OTP Sent!", response))
+            .catch(error => console.log("Error Sending OTP", error));
+        setUser(data)
+    }
 
     const loginData = (data) => {
         const generatedOTP = Math.floor(1000 + Math.random() * 9000);
@@ -60,7 +59,7 @@ export const DataProvider = ({ children }) => {
         const message = `Your OTP is: ${generatedOTP}`;
 
         // Call Laravel API (POST request to Laravel API)
-        axios.post(`${BASE_URL}/send-sms`, {
+        axios.post(`{BASE_URL}/send-sms`, {
             number: data,    // phone number from input
             message: message // generated OTP message
         })
@@ -90,7 +89,7 @@ export const DataProvider = ({ children }) => {
     const logOut = () => {
         localStorage.removeItem('signUp')
         setUser('')
-        window.location.href = '/';
+        navigate('/')
         fetchPurchasedCourses()
     }
 
@@ -100,7 +99,6 @@ export const DataProvider = ({ children }) => {
             const response = await fetch(`${BASE_URL}/checkout/get/${user}`);
             const data = await response.json();
             setPurchasedCourses(data);
-            setCourseLoading(false)
         } catch (error) {
             console.error("Error fetching purchased courses:", error);
         }
@@ -114,7 +112,7 @@ export const DataProvider = ({ children }) => {
 
 
     return (
-        <DataContext.Provider value={{ setUser, user, loginData, logOut, otp, getCourseApiData, loading, purchasedCourses, fetchPurchasedCourses, userLoginCheck ,courseLoading}}>
+        <DataContext.Provider value={{ setUser, user, loginData, logOut, otp, getCourseApiData, loading, purchasedCourses, fetchPurchasedCourses, userLoginCheck }}>
             {children}
         </DataContext.Provider>
     );

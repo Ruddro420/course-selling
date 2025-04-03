@@ -10,7 +10,7 @@ const Account = () => {
         <div>
             {
                 courseLoading ? <Loader /> : <section className="bg-white py-8 antialiased ">
-                    <div className="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+                    <div className="mx-auto max-w-7xl px-4 2xl:px-0">
                         <h2 className="mb-4 text-xl font-semibold text-gray-900  sm:text-2xl md:mb-6">General overview</h2>
                         <div className="flex items-center justify-between p-6 bg-black text-white rounded-lg">
 

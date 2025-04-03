@@ -114,7 +114,7 @@ export const DataProvider = ({ children }) => {
 
 
     return (
-        <DataContext.Provider value={{ setUser, user, loginData, logOut, otp, getCourseApiData, loading, purchasedCourses, fetchPurchasedCourses, userLoginCheck ,courseLoading}}>
+        <DataContext.Provider value={{ setUser, user, loginData, logOut, otp, getCourseApiData, loading, purchasedCourses, fetchPurchasedCourses, userLoginCheck ,courseLoading,userLoginCheck}}>
             {children}
         </DataContext.Provider>
     );

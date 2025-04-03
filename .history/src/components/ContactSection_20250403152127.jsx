@@ -9,6 +9,23 @@ const ContactSection = () => {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    // Fetch testimonials data
+    axios
+      .get("/public/data/Courses.json")
+      .then((response) => {
+        setCourses(response.data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error(
+          "There was an error fetching Course Data",
+          toast.error("Failed to fetch Course Data"),
+          error
+        );
+        // setLoading(false);
+      });
+  }, []);
 
   /* -------------------------------------------------- */
 

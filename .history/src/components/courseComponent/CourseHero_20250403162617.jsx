@@ -16,7 +16,7 @@ const CourseHero = ({ course }) => {
   const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
   // load context
-  const { loginData, otp,userLoginCheck } = useContext(DataContext);
+  const { loginData, otp } = useContext(DataContext);
 
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
@@ -49,14 +49,12 @@ const CourseHero = ({ course }) => {
         toast.error('You have already an account in this number. Please login your account and then purchases the course. In same course you can buy only one number.If you buy the same course please register the new number');
         setTimeout(() => {
           window.location.href = '/login';
-        }, 3000);
-      } else {
-        loginData(number)
-        setGetNum(number)
-        toast.success("OTP Sent To Your Phone Number");
-        document.getElementById('number').value = ''
+        }, 2000);
       }
-
+      loginData(number)
+      setGetNum(number)
+      toast.success("OTP Sent To Your Phone Number");
+      document.getElementById('number').value = ''
     }
   };
 
@@ -70,7 +68,6 @@ const CourseHero = ({ course }) => {
       })
         .then(function (response) {
           console.log(response);
-          userLoginCheck()
         })
         .catch(function (error) {
           console.log(error);

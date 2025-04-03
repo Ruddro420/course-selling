@@ -16,7 +16,7 @@ const CourseHero = ({ course }) => {
   const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
   // load context
-  const { loginData, otp,userLoginCheck } = useContext(DataContext);
+  const { loginData, otp } = useContext(DataContext);
 
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
@@ -70,7 +70,6 @@ const CourseHero = ({ course }) => {
       })
         .then(function (response) {
           console.log(response);
-          userLoginCheck()
         })
         .catch(function (error) {
           console.log(error);

@@ -6,9 +6,6 @@ import SectionLoader from "./Loader/SectionLoader";
 const ContactSection = () => {
   /* Fetch Course Data---------------------------------- */
 
-  const [courses, setCourses] = useState([]);
-  const [loading, setLoading] = useState(true);
-
 
   /* -------------------------------------------------- */
 

@@ -12,7 +12,6 @@ export const DataProvider = ({ children }) => {
     const navigate = useNavigate();
     const [getCourseApiData, setGetCourseApiData] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [courseLoading, setCourseLoading] = useState(true);
     const [purchasedCourses, setPurchasedCourses] = useState([]);
 
     // get course
@@ -100,7 +99,6 @@ export const DataProvider = ({ children }) => {
             const response = await fetch(`${BASE_URL}/checkout/get/${user}`);
             const data = await response.json();
             setPurchasedCourses(data);
-            setCourseLoading(false)
         } catch (error) {
             console.error("Error fetching purchased courses:", error);
         }
@@ -114,7 +112,7 @@ export const DataProvider = ({ children }) => {
 
 
     return (
-        <DataContext.Provider value={{ setUser, user, loginData, logOut, otp, getCourseApiData, loading, purchasedCourses, fetchPurchasedCourses, userLoginCheck ,courseLoading}}>
+        <DataContext.Provider value={{ setUser, user, loginData, logOut, otp, getCourseApiData, loading, purchasedCourses, fetchPurchasedCourses, userLoginCheck }}>
             {children}
         </DataContext.Provider>
     );
