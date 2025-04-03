@@ -1,4 +1,5 @@
-import { useContext } from "react";
+
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { DataContext } from "../context/DataContext";
 
@@ -6,6 +7,9 @@ const Header = () => {
   // get local storage data
   // load context
   const { user } = useContext(DataContext);
+
+  // State to manage the visibility of the menu
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuContent = [
     {
@@ -25,9 +29,10 @@ const Header = () => {
       link: "/contact",
     },
   ];
+
   return (
     <div>
-      <nav className="bg-white bg-opacity-30  fixed w-full z-[999] top-0 start-0 ">
+      <nav className="bg-white bg-opacity-30 fixed w-full z-[999] top-0 start-0">
         <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto px-6 lg:px-8 py-4">
           <Link to={"/"} title="" className="flex">
             <img
@@ -37,19 +42,28 @@ const Header = () => {
             />
           </Link>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            {
-              user ? <button type="button" className="text-white hover:text-black bg-[#0CC0DF] hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-[#0CC0DF] dark:hover:bg-yellow-300 dark:focus:ring-yellow-300"><Link to={"/account"}>Dashboard</Link></button>
-                :
-                <button type="button" className="text-white hover:text-black bg-[#0CC0DF] hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-[#0CC0DF] dark:hover:bg-yellow-300 dark:focus:ring-yellow-300"><Link to={"/login"}>লগইন করুন</Link></button>
-            }
-
+            {user ? (
+              <button
+                type="button"
+                className="text-white hover:text-black bg-[#0CC0DF] hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-[#0CC0DF] dark:hover:bg-yellow-300 dark:focus:ring-yellow-300"
+              >
+                <Link to={"/account"}>Dashboard</Link>
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="text-white hover:text-black bg-[#0CC0DF] hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-[#0CC0DF] dark:hover:bg-yellow-300 dark:focus:ring-yellow-300"
+              >
+                <Link to={"/login"}>লগইন করুন</Link>
+              </button>
+            )}
 
             <button
-              data-collapse-toggle="navbar-sticky"
+              onClick={() => setIsMenuOpen(!isMenuOpen)} // Toggle menu visibility
               type="button"
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-sticky"
-              aria-expanded="false"
+              aria-expanded={isMenuOpen}
             >
               <span className="sr-only">Open main menu</span>
               <svg
@@ -70,10 +84,12 @@ const Header = () => {
             </button>
           </div>
           <div
-            className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            className={`items-center justify-between ${
+              isMenuOpen ? "block" : "hidden"
+            } w-full md:flex md:w-auto md:order-1`}
             id="navbar-sticky"
           >
-            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
+            <ul className="flex flex-col p-4 md:p-0 mt-4 gap-3 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700">
               {menuContent.map((menu, index) => (
                 <li key={index}>
                   <Link
