@@ -160,7 +160,7 @@ const ContactSection = () => {
                 <SectionLoader
                   loading={loading}
                   section={
-                    <form onSubmit={onSubmit} className="mt-14">
+                    <form action={"https://formspree.io/f/manepjqb"} onSubmit={onSubmit} className="mt-14" method="POST">
                       <input
                         type="hidden"
                         name="subject"
@@ -172,8 +172,7 @@ const ContactSection = () => {
                             htmlFor="name"
                             className="text-base font-medium text-gray-900"
                           >
-                            {" "}
-                            Your name{" "}
+                           আপনার নাম
                           </label>
                           <div className="mt-2.5 relative">
                             <input
@@ -191,8 +190,7 @@ const ContactSection = () => {
                             htmlFor="email"
                             className="text-base font-medium text-gray-900"
                           >
-                            {" "}
-                            Email address{" "}
+                            আপনার ইমেইল 
                           </label>
                           <div className="mt-2.5 relative">
                             <input
@@ -210,8 +208,7 @@ const ContactSection = () => {
                             htmlFor="phone"
                             className="text-base font-medium text-gray-900"
                           >
-                            {" "}
-                            Phone number{" "}
+                            আপনার ফোন নাম্বার
                           </label>
                           <div className="mt-2.5 relative">
                             <input
@@ -228,8 +225,7 @@ const ContactSection = () => {
                             htmlFor="course"
                             className="text-base font-medium text-gray-900"
                           >
-                            {" "}
-                            Company name{" "}
+                            কম্পানির নাম
                           </label>
                           <div className="mt-2.5 relative">
                             <select
@@ -255,8 +251,8 @@ const ContactSection = () => {
                             htmlFor="message"
                             className="text-base font-medium text-gray-900"
                           >
-                            {" "}
-                            Message{" "}
+                            আপনার ম্যাসেজ
+
                           </label>
                           <div className="mt-2.5 relative">
                             <textarea
