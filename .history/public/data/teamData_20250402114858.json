@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Nibir",
+      "role": "Digital Marketer",
+      "image": "../../img/1.jpg"
+    },
+    {
+      "name": "Md. Tauhidul Islam Shadhin",
+      "role": "Web Developer",
+      "image": "../../img/2.jpg"
+    },
+    {
+      "name": "Samiul Nir",
+      "role": "Graphic Designer",
+      "image": "../../img/3.jpg"
+    },
+    {
+      "name": "Md. Tareak Noman Dipto",
+      "role": "Web Developer",
+      "image": "../../img/4.jpg"
+    },
+    {
+      "name": "Nirob",
+      "role": "Graphic Designer",
+      "image": "../../img/5.jpg"
+    }
+  ]
