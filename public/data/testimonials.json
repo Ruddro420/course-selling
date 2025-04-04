@@ -1,0 +1,83 @@
+[
+    {
+      "name": "Nahid Hasan",
+      "username": "@nahid.design",
+      "title": "Graphic Designer, Dhaka",
+      "image": "https://i.postimg.cc/GTn4XcRs/Whats-App-Image-2025-04-05-at-1-27-11-AM.jpg",
+      "coursename": "Professional Graphic Design",
+      "category": "Graphic Design",
+      "message": "Britto Learning-এর কোর্সগুলো খুবই প্র্যাকটিক্যাল এবং সহজভাবে শেখানো হয়। আমি গ্রাফিক ডিজাইনের কোর্স করে ফ্রিল্যান্সিং শুরু করেছি।",
+      "link": "https://facebook.com/nahid.design"
+    },
+    {
+      "name": "Sharmin Akter",
+      "username": "@sharmin_ru",
+      "title": "Student, Rajshahi University",
+      "image": "https://i.postimg.cc/MvxcRKtC/Whats-App-Image-2025-04-05-at-1-28-28-AM.jpg",
+      "coursename": "Full Stack Web Development",
+      "category": "Development",
+      "message": "আমি Britto Learning থেকে ওয়েব ডেভেলপমেন্ট শিখেছি। তাদের ইনস্ট্রাক্টররা অনেক হেল্পফুল এবং কোর্স কনটেন্ট আপডেটেড।",
+      "link": "https://linkedin.com/in/sharmin_ru"
+    },
+    {
+      "name": "Tariqul Islam",
+      "username": "@tariqul.codes",
+      "title": "Freelancer, Upwork",
+      "image": "https://i.postimg.cc/jW9wJHkc/Whats-App-Image-2025-04-05-at-2-24-53-AM.jpg",
+      "coursename": "Freelancing Masterclass",
+      "category": "Career & Freelancing",
+      "message": "Britto Learning-এর কোর্স করে আমি Fiverr ও Upwork-এ কাজ শুরু করতে পেরেছি। ধন্যবাদ Britto টিমকে।",
+      "link": "https://www.upwork.com/freelancers/~tariqul"
+    },
+    {
+      "name": "Mitu Rahman",
+      "username": "@mitu.marketer",
+      "title": "Entrepreneur, Chittagong",
+      "image": "https://i.postimg.cc/WDtq3WSt/Whats-App-Image-2025-04-05-at-2-24-54-AM.jpg",
+      "coursename": "Digital Marketing for Business",
+      "category": "Digital Marketing",
+      "message": "আমি আমার বিজনেসের জন্য ডিজিটাল মার্কেটিং শিখতে চেয়েছিলাম। Britto Learning-এর কোর্সে হাতে-কলমে শেখানো হয়েছে, যা অনেক কাজে এসেছে।",
+      "link": "https://www.instagram.com/mitu.marketer"
+    },
+    {
+      "name": "Asif Mahmud",
+      "username": "@asif.dev",
+      "title": "Junior Developer, Sylhet",
+      "image": "https://i.postimg.cc/w1ws98XS/Whats-App-Image-2025-04-05-at-2-24-54-AM-1.jpg",
+      "coursename": "Frontend Development with React",
+      "category": "Development",
+      "message": "Britto Learning-এর কোর্স করে আমি এখন একটি সফটওয়্যার কোম্পানিতে কাজ করছি। এখানকার সাপোর্ট সিস্টেমও অনেক ভালো।",
+      "link": "https://github.com/asif-dev"
+    },
+    {
+      "name": "Rumana Islam",
+      "username": "@rumana.editz",
+      "title": "Freelance Image Editor, Khulna",
+      "image": "https://i.postimg.cc/8sLJjrdd/Whats-App-Image-2025-04-05-at-2-24-55-AM.jpg",
+      "coursename": "Advanced Image Editing with Photoshop",
+      "category": "Image Editing",
+      "message": "ছবি এডিটিং শিখে আমি এখন মাসে নিয়মিত ইনকাম করছি। Britto Learning-এর কোর্স গুলো খুবই কার্যকরী।",
+      "link": "https://www.behance.net/rumanaeditz"
+    },
+    {
+      "name": "Sabbir Hossain",
+      "username": "@sabbir.tech",
+      "title": "Tech YouTuber, Cumilla",
+      "image": "https://i.postimg.cc/CBqZCR3g/Whats-App-Image-2025-04-05-at-2-24-55-AM-1.jpg",
+      "coursename": "YouTube Content Strategy & Video Editing",
+      "category": "Content Creation",
+      "message": "আমি ইউটিউবের জন্য কনটেন্ট কিভাবে বানাতে হয় এবং ভিডিও এডিটিং শিখেছি Britto Learning থেকে। আমার সাবস্ক্রাইবার এখন ৫০ হাজার ছাড়িয়েছে।",
+      "link": "https://www.youtube.com/@sabbirtech"
+    },
+    {
+      "name": "Jannatul Ferdous",
+      "username": "@janna.uiux",
+      "title": "UI/UX Designer, Dhaka",
+      "image": "https://i.postimg.cc/2LdVJPj9/Whats-App-Image-2025-04-05-at-2-24-56-AM.jpg",
+      "coursename": "UI/UX Design with Figma",
+      "category": "UI/UX Design",
+      "message": "Britto Learning এর UI/UX কোর্সে আমি ফিগমা ভালোভাবে শিখেছি। এখন দেশের বাইরে থেকেও ক্লায়েন্ট পাচ্ছি।",
+      "link": "https://dribbble.com/janna_uiux"
+    }
+  ]
+  

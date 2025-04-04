@@ -1,23 +1,42 @@
 [
-    {
-      "name": "Nibir",
-      "role": "Digital Marketer",
-      "image": "../../img/1.jpg"
-    },
-   
-    {
-      "name": "Samiul Nir",
-      "role": "Graphic Designer",
-      "image": "../../img/3.jpg"
-    },
-    {
-      "name": "Md. Tareak Noman Dipto",
-      "role": "Web Developer",
-      "image": "../../img/4.jpg"
-    },
-    {
-      "name": "Nirob",
-      "role": "Graphic Designer",
-      "image": "../../img/5.jpg"
-    }
-  ]
+  {
+    "name": "Nibir",
+    "role": "Digital Marketer",
+    "image": "../../img/1.jpg",
+    "facebook": "",
+    "linkedin": "",
+    "twitter": "",
+    "dribbble": "",
+    "github": ""
+  },
+  {
+    "name": "Samiul Nir",
+    "role": "Graphic Designer",
+    "image": "../../img/3.jpg",
+    "facebook": "",
+    "linkedin": "",
+    "twitter": "",
+    "dribbble": "",
+    "github": ""
+  },
+  {
+    "name": "Md. Tareak Noman Dipto",
+    "role": "Web Developer",
+    "image": "../../img/4.jpg",
+    "facebook": "",
+    "linkedin": "",
+    "twitter": "",
+    "dribbble": "",
+    "github": ""
+  },
+  {
+    "name": "Nirob",
+    "role": "Graphic Designer",
+    "image": "../../img/5.jpg",
+    "facebook": "",
+    "linkedin": "",
+    "twitter": "",
+    "dribbble": "",
+    "github": ""
+  }
+]

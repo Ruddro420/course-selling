@@ -28,58 +28,58 @@ const MainFooter = () => {
                 অনলাইন, লাইভ স্কিল ডেভেলপমেন্ট প্ল্যাটফর্ম।
               </p>
 
-              <a
-                href="https://wa.me/+8801709533356"
+              <Link
+                to="https://wa.me/+8801709533356"
                 target="_blank"
                 className="inline-flex items-center justify-center px-6 py-4 font-semibold text-white hover:text-black transition-all duration-200 bg-[#0CC0DF] rounded-md hover:bg-[#FCD34D] focus:bg-[#FCD34D] mt-7"
-              >          
+              >
                 <FaWhatsapp className="w-6 h-6 me-2" />
                 Text Us Here
-              </a>
+              </Link>
             </div>
 
             <div className="lg:col-span-2">
-              <p className="text-base font-semibold text-gray-900">Company</p>
+              <p className="text-base font-semibold text-gray-900">Menu</p>
 
               <ul className="mt-6 space-y-5">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     হোম
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/about-us"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     আমাদের সম্পর্কে
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/all-courses"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     কোর্স সমূহ
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/contact"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     যোগাযোগ
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -89,47 +89,48 @@ const MainFooter = () => {
 
               <ul className="mt-6 space-y-4">
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="tel:+8801709533356"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
-                    Customer Support{" "}
-                  </a>
+                    +8801709533356{" "}
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="https://wa.me/+8801709533356"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
-                    Delivery Details{" "}
-                  </a>
+                    হোয়াটস অ্যাপ{" "}
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
-                    Terms & Conditions{" "}
-                  </a>
+
+                    info@brittolearning.com{" "}
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
-                    Privacy Policy{" "}
-                  </a>
+                    support@brittolearning.com{" "}
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -138,100 +139,91 @@ const MainFooter = () => {
               <p className="text-base font-semibold text-gray-900">Resources</p>
 
               <ul className="mt-6 space-y-5">
+               
+
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
-                    Free eBooks{" "}
-                  </a>
+                    Free Courses{" "}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/"
+                    title=""
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
+                  >
+                    {" "}
+                    Upcoming Courses{" "}
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
-                    Development Tutorial{" "}
-                  </a>
+                    Youtube{" "}
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
-                    How to - Blog{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
-                  >
-                    {" "}
-                    YouTube Playlist{" "}
-                  </a>
+                    Career Guid{" "}
+                  </Link>
                 </li>
               </ul>
             </div>
 
             <div className="lg:col-span-2">
               <p className="text-base font-semibold text-gray-900">
-                Extra Links
+                Company
               </p>
 
               <ul className="mt-6 space-y-5">
-                <li>
-                  <a
-                    href="#"
-                    title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
-                  >
-                    {" "}
-                    Customer Support{" "}
-                  </a>
-                </li>
 
                 <li>
-                  <a
-                    href="#"
-                    title=""
-                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
-                  >
-                    {" "}
-                    Delivery Details{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Terms & Conditions{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     title=""
                     className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
                   >
                     {" "}
                     Privacy Policy{" "}
-                  </a>
+                  </Link>
+                </li>
+                
+                <li>
+                  <Link
+                    to="/"
+                    title=""
+                    className="flex text-sm text-gray-800 transition-all duration-200 hover:text-[#1CC4DF] focus:text-[#1CC4DF]"
+                  >
+                    {" "}
+                    Refund Policy{" "}
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -246,58 +238,58 @@ const MainFooter = () => {
 
             <ul className="flex items-center mt-5 space-x-3 md:order-3 sm:mt-0">
               <li>
-                <a
-                  href="https://www.facebook.com/brittolearning"
+                <Link
+                  to="https://www.facebook.com/brittolearning"
                   className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#1CC4DF] hover:text-white focus:text-white hover:bg-[#1CC4DF] hover:border-[#1CC4DF] focus:border-[#1CC4DF]"
                 >
                   <FaFacebookF />
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="https://www.instagram.com/brittolearning/"
+                <Link to="https://www.instagram.com/brittolearning/"
                   className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#1CC4DF] hover:text-white focus:text-white hover:bg-[#1CC4DF] hover:border-[#1CC4DF] focus:border-[#1CC4DF]"
                 >
                   <FaInstagram />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.linkedin.com/company/brittolearning"
+                <Link to="https://www.linkedin.com/company/brittolearning"
                   className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#1CC4DF] hover:text-white focus:text-white hover:bg-[#1CC4DF] hover:border-[#1CC4DF] focus:border-[#1CC4DF]"
                 >
                   <FaLinkedinIn />
 
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.youtube.com/@brittolearning"
+                <Link to="https://www.youtube.com/@brittolearning"
                   className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#1CC4DF] hover:text-white focus:text-white hover:bg-[#1CC4DF] hover:border-[#1CC4DF] focus:border-[#1CC4DF]"
                 >
                   <FaYoutube />
 
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="https://www.tiktok.com/@brittolearningbd"
+                <Link to="https://www.tiktok.com/@brittolearningbd"
                   className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#1CC4DF] hover:text-white focus:text-white hover:bg-[#1CC4DF] hover:border-[#1CC4DF] focus:border-[#1CC4DF]"
                 >
                   <FaTiktok />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.pinterest.com/brittolearning/"
+                <Link to="https://www.pinterest.com/brittolearning/"
                   className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#1CC4DF] hover:text-white focus:text-white hover:bg-[#1CC4DF] hover:border-[#1CC4DF] focus:border-[#1CC4DF]"
                 >
                   <FaPinterestP />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://medium.com/@brittolearning"
+                <Link to="https://medium.com/@brittolearning"
                   className="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-[#1CC4DF] hover:text-white focus:text-white hover:bg-[#1CC4DF] hover:border-[#1CC4DF] focus:border-[#1CC4DF]"
                 >
                   <FaMediumM />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
