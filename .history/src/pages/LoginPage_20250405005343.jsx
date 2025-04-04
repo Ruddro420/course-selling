@@ -88,10 +88,10 @@ const LoginPage = () => {
 
     return (
         <div className="flex items-center justify-center min-h-screen course-container">
-            <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md block-bg">
-                <h2 className="text-2xl font-bold text-centertext-white">Login</h2>
+            <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
+                <h2 className="text-2xl font-bold text-center text-gray-900">Login</h2>
                 <div>
-                    <div className="relative border-t border-slate-200 py-4 leading-normal text-white font-light">
+                    <div className="relative border-t border-slate-200 py-4 leading-normal text-slate-600 font-light">
                         <div className="p-4 md:p-5">
                             {
                                 otp ?

@@ -41,7 +41,7 @@ const CourseSylabus = ({ course, sloading }) => {
   return (
     <>
       {
-        sloading ? <Loader /> : <div className="container mx-auto lg:mt-10 max-w-screen-xl px-6 md:px-12">
+        sloading ? <Loader /> : <div className="container mx-auto lg:mt-10 max-w-screen-xl px-6 md:px-12 mb-10">
           <div className="mb-4">
             <h2 className="text-2xl mb-2 text-black font-bold">কোর্স বিস্তারিত</h2>
           </div>

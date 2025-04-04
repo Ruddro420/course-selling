@@ -46,7 +46,7 @@ const SingleCourse = () => {
           <div>Loading...</div>
         ) : (
           <div className="">
-            <CourseHero course={course} sloading={loading} />
+            <CourseHero course={course} />
             <CourseSylabus course={course} sloading={loading} />
           </div>
         )}

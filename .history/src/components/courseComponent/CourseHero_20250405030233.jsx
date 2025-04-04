@@ -98,26 +98,9 @@ const CourseHero = ({ course, sloading }) => {
     setUser(user);
   }, [user]);
 
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    if (course) {
-      // Simulate loading delay (optional, remove in production)
-      const timer = setTimeout(() => {
-
-        setLoading(false);
-      }, 1000); // Simulate 1s loading
-
-      return () => clearTimeout(timer);
-    }
-  }, [course]);
-
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center h-96">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 border-solid"></div>
-      </div>
-    );
+   // check loading
+   if (sloading) {
+    return <Loader />
   }
 
   return (

@@ -16,8 +16,6 @@ const CourseHero = ({ course, sloading }) => {
   const [getUsers, setGetUsers] = useState([]);
   const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
- 
-
   // load context
   const { loginData, otp, userLoginCheck } = useContext(DataContext);
 
@@ -98,32 +96,10 @@ const CourseHero = ({ course, sloading }) => {
     setUser(user);
   }, [user]);
 
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    if (course) {
-      // Simulate loading delay (optional, remove in production)
-      const timer = setTimeout(() => {
-
-        setLoading(false);
-      }, 1000); // Simulate 1s loading
-
-      return () => clearTimeout(timer);
-    }
-  }, [course]);
-
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center h-96">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 border-solid"></div>
-      </div>
-    );
-  }
-
   return (
     <>
       {
-        sloading ? <Loader /> : <div className="">
+        course ? <Loader /> : <div className="">
           <div className="course-container py-80 course-hero-section  h-80 flex items-center justify-between mx-auto p-4 lg:py-56">
             <div className="container mx-auto mt-10 max-w-screen-xl md:px-12">
               <div className="flex flex-col course-hero md:flex-row md:gap-12">

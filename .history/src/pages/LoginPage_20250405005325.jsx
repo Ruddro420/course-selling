@@ -88,21 +88,21 @@ const LoginPage = () => {
 
     return (
         <div className="flex items-center justify-center min-h-screen course-container">
-            <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md block-bg">
-                <h2 className="text-2xl font-bold text-centertext-white">Login</h2>
+            <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
+                <h2 className="text-2xl font-bold text-center text-gray-900">Login</h2>
                 <div>
-                    <div className="relative border-t border-slate-200 py-4 leading-normal text-white font-light">
+                    <div className="relative border-t border-slate-200 py-4 leading-normal text-slate-600 font-light">
                         <div className="p-4 md:p-5">
                             {
                                 otp ?
                                     <form className="space-y-4" onSubmit={submitOTP}>
                                         <div>
-                                            <label htmlFor="otp" className="block mb-2 text-sm font-medium text-white">Submit OTP</label>
+                                            <label htmlFor="otp" className="block mb-2 text-sm font-medium text-gray-900 ">Submit OTP</label>
                                             <input
                                                 type="number"
                                                 name="otp_number"
                                                 id="otp_number"
-                                                className="bg-gray-50 border border-gray-300 text-whitetext-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                                 placeholder="OTP"
                                                 required
                                             />
@@ -117,12 +117,12 @@ const LoginPage = () => {
                                     :
                                     <form className="space-y-4" onSubmit={signUp}>
                                         <div>
-                                            <label htmlFor="number" className="block mb-2 text-sm font-medium text-white">Your Phone Number</label>
+                                            <label htmlFor="number" className="block mb-2 text-sm font-medium text-gray-900 ">Your Phone Number</label>
                                             <input
                                                 type="number"
                                                 name="number"
                                                 id="number"
-                                                className="bg-gray-50 border border-gray-300 text-whitetext-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                                 placeholder="01755 XXXXXX"
                                                 required
                                             />

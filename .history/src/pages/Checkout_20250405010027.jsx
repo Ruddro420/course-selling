@@ -125,7 +125,7 @@ const Checkout = () => {
                         </div>
 
                         <div className="mt-6 w-full space-y-6 sm:mt-8 lg:mt-0 lg:max-w-xs xl:max-w-md block-bg">
-                            <div className="rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4 block-bg">
+                            <div className="rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4 ">
                                 <div className="flex items-center">
                                     <div className="flex h-24 items-center">
                                         <img className="h-24 rounded-md border object-cover object-center" src={data?.banner} alt="" />

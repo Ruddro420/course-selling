@@ -4,6 +4,7 @@ import CourseSylabus from "../components/courseComponent/CourseSylabus";
 import { useContext, useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import { DataContext } from "../context/DataContext";
+import Loader from "../components/Loader/Loader";
 import toast from "react-hot-toast";
 
 const SingleCourse = () => {
@@ -23,6 +24,7 @@ const SingleCourse = () => {
         if (selectedCourse) {
           setLoading(false);
         }
+
       })
       .catch((error) => {
         console.error("Error fetching course data:", error);
@@ -46,7 +48,7 @@ const SingleCourse = () => {
           <div>Loading...</div>
         ) : (
           <div className="">
-            <CourseHero course={course} sloading={loading} />
+            <CourseHero course={course} />
             <CourseSylabus course={course} sloading={loading} />
           </div>
         )}

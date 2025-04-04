@@ -16,8 +16,6 @@ const CourseHero = ({ course, sloading }) => {
   const [getUsers, setGetUsers] = useState([]);
   const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
- 
-
   // load context
   const { loginData, otp, userLoginCheck } = useContext(DataContext);
 
@@ -97,28 +95,6 @@ const CourseHero = ({ course, sloading }) => {
     const user = JSON.parse(localStorage.getItem("signUp"));
     setUser(user);
   }, [user]);
-
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    if (course) {
-      // Simulate loading delay (optional, remove in production)
-      const timer = setTimeout(() => {
-
-        setLoading(false);
-      }, 1000); // Simulate 1s loading
-
-      return () => clearTimeout(timer);
-    }
-  }, [course]);
-
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center h-96">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 border-solid"></div>
-      </div>
-    );
-  }
 
   return (
     <>
