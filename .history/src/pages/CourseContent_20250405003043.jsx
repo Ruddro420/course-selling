@@ -12,7 +12,7 @@ export default function CourseContent() {
     const navigate = useNavigate();
     const [courses, setCourses] = useState([]);
     const [loading, setLoading] = useState(true);
-    const { purchasedCourses ,courseLoading } = useContext(DataContext);
+    const { purchasedCourses } = useContext(DataContext);
 
     // Fetch course content
     const getCourseContent = () => {
@@ -30,18 +30,17 @@ export default function CourseContent() {
     }, [id]);
 
     // Check if purchasedCourses is still loading
-    if (courseLoading || !purchasedCourses || !purchasedCourses.data) {
-        return <Loader />;
+    if (!purchasedCourses || !purchasedCourses.data) {
+        return <Loader />; // Show loader until data is available
     }
 
     // Check if the course is purchased
-    const isPurchased = purchasedCourses.data.some(item => item.course_name == id);
+    const isPurchased = purchasedCourses.data.some(item => item.course_name === id);
 
     if (!isPurchased) {
         toast.error('You need to purchase this course first');
         return <Navigate to="/all-courses" />;
     }
-
 
     const selectedCourse = courses[selectedCourseIndex];
 
@@ -66,17 +65,17 @@ export default function CourseContent() {
         <>
             {
                 loading ? <Loader /> : (
-                    <section className="course-container py-24 sm:py-16 lg:py-40">
+                    <section className="course-container pt-44 sm:py-16 lg:py-24">
                         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                             <div className="flex lg:flex-row flex-col lg:h-screen">
                                 {/* Sidebar */}
-                                <div className="lg:w-1/3 block-bg mb-5 p-5 overflow-auto rounded-md border-2 border-gray-200 max-h-fit">
+                                <div className="lg:w-1/3 bg-white mb-5 p-5 overflow-auto rounded-md border-2 border-gray-200 max-h-fit">
                                     <h2 className="text-xl font-bold mb-4">Course Content</h2>
                                     <ul>
                                         {courses?.map((course, index) => (
                                             <li
                                                 key={course.id}
-                                                className={`p-3 mb-2 cursor-pointer flex justify-between items-center rounded border-2 border-gray-100 ${selectedCourseIndex === index ? 'bg-[#0BA3C4] text-white' : 'block-bg'
+                                                className={`p-3 mb-2 cursor-pointer flex justify-between items-center rounded border-2 border-gray-100 ${selectedCourseIndex === index ? 'bg-[#0BA3C4] text-white' : 'bg-white'
                                                     }`}
                                                 onClick={() => setSelectedCourseIndex(index)}
                                             >
@@ -90,7 +89,7 @@ export default function CourseContent() {
                                 {/* Main Content */}
                                 <div className="flex-1 flex flex-col px-5 space-y-4">
                                     {/* Progress Bar */}
-                                    <div className="block-bg p-4 rounded-lg border-2 border-gray-200">
+                                    <div className="bg-white p-4 rounded-lg border-2 border-gray-200">
                                         <h3 className="font-bold mb-3">আপনার প্রোগ্রেস</h3>
                                         <div className="w-full bg-gray-200 rounded">
                                             <div
@@ -114,7 +113,7 @@ export default function CourseContent() {
                                     </div>
 
                                     {/* Topic Description */}
-                                    <div className="block-bg p-4 rounded-lg shadow-md">
+                                    <div className="bg-white p-4 rounded-lg shadow-md">
                                         <h2 className="text-lg font-semibold">Topic Description</h2>
                                         <p className="text-gray-600">{selectedCourse.module_des}</p>
                                     </div>

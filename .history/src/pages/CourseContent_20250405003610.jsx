@@ -35,7 +35,7 @@ export default function CourseContent() {
     }
 
     // Check if the course is purchased
-    const isPurchased = purchasedCourses.data.some(item => item.course_name == id);
+    const isPurchased = purchasedCourses.data.some(item => item.course_name === id);
 
     if (!isPurchased) {
         toast.error('You need to purchase this course first');

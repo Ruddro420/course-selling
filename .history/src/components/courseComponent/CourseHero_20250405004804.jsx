@@ -120,7 +120,7 @@ const CourseHero = ({ course }) => {
                 <div className="suggestion-pricing ">
                   <div className="p-5">
 
-                    <h5 className="mb-2 text-2xl font-bold tracking-tighttext-white ">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
                       <span className="text-4xl font-semibold text-white tracking-tighter">
                         <Bn content={course.course_price} /> ৳
                       </span>
@@ -189,14 +189,14 @@ const CourseHero = ({ course }) => {
                 {
                   otp ? <form className="space-y-4" onSubmit={submitOTP}>
                     <div>
-                      <label htmlFor="otp" className="block mb-2 text-sm font-medium text-white ">Submit OTP</label>
-                      <input type="number" name="otp_number" id="otp_number" className="bg-gray-50 border border-gray-300text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="OTP" required />
+                      <label htmlFor="otp" className="block mb-2 text-sm font-medium text-gray-900 ">Submit OTP</label>
+                      <input type="number" name="otp_number" id="otp_number" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="OTP" required />
                     </div>
                     <button type="submit" className="w-full cursor-pointer text-white bg-[#12C1DF] hover:bg-[#FCD34D] hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm px-5 py-2.5 text-center">Submit OTP</button>
                   </form> : <form className="space-y-4" onSubmit={signUp}>
                     <div>
-                      <label htmlFor="number" className="block mb-2 text-sm font-medium text-white ">Your Phone Number</label>
-                      <input type="number" name="number" id="number" className="bg-gray-50 border border-gray-300text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="01755 XXXXXX" required />
+                      <label htmlFor="number" className="block mb-2 text-sm font-medium text-gray-900 ">Your Phone Number</label>
+                      <input type="number" name="number" id="number" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="01755 XXXXXX" required />
                     </div>
                     <button type="submit" className="w-full cursor-pointer text-white bg-[#12C1DF] hover:bg-[#FCD34D] hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm px-5 py-2.5 text-center">Register to your account</button>
                   </form>

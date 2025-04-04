@@ -12,7 +12,7 @@ export default function CourseContent() {
     const navigate = useNavigate();
     const [courses, setCourses] = useState([]);
     const [loading, setLoading] = useState(true);
-    const { purchasedCourses ,courseLoading } = useContext(DataContext);
+    const { purchasedCourses } = useContext(DataContext);
 
     // Fetch course content
     const getCourseContent = () => {
@@ -30,12 +30,12 @@ export default function CourseContent() {
     }, [id]);
 
     // Check if purchasedCourses is still loading
-    if (courseLoading || !purchasedCourses || !purchasedCourses.data) {
+    if (!purchasedCourses || !purchasedCourses.data) {
         return <Loader />;
     }
 
     // Check if the course is purchased
-    const isPurchased = purchasedCourses.data.some(item => item.course_name == id);
+    const isPurchased = purchasedCourses?.data?.some(item => item.course_name === id);
 
     if (!isPurchased) {
         toast.error('You need to purchase this course first');

@@ -9,9 +9,9 @@ const Account = () => {
     return (
         <div>
             {
-                courseLoading ? <Loader /> : <section className="course-container py-18 antialiased ">
+                courseLoading ? <Loader /> : <section className="course-container py-8 antialiased ">
                     <div className="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
-                        <h2 className="mb-4 text-xl font-semibold text-white  sm:text-2xl md:mb-6">General overview</h2>
+                        <h2 className="mb-4 text-xl font-semibold text-gray-900  sm:text-2xl md:mb-6">General overview</h2>
                         <div className="flex items-center justify-between p-6 bg-black text-white rounded-lg">
 
                             <div>
@@ -32,8 +32,8 @@ const Account = () => {
 
                         {/* Latest Order */}
                         {
-                            purchasedCourses.data?.length == 0 ? <Alert /> : <div className="mt-8 rounded-lg border border-gray-200 block-bg p-4  md:p-8">
-                                <h3 className="mb-4 text-xl font-semibold text-white ">Latest orders</h3>
+                            purchasedCourses.data?.length == 0 ? <Alert /> : <div className="mt-8 rounded-lg border border-gray-200 bg-gray-50 p-4  md:p-8">
+                                <h3 className="mb-4 text-xl font-semibold text-gray-900 ">Latest orders</h3>
                                 {
                                     purchasedCourses.data?.map(item => {
                                         return (
@@ -41,8 +41,8 @@ const Account = () => {
                                                 <div className="flex flex-wrap items-center gap-y-4 border-b border-gray-200 pb-4  md:pb-5">
 
                                                     <dl className="w-1/2 sm:w-1/4 md:flex-1 lg:w-auto">
-                                                        <dt className="text-base font-medium text-white ">Date:</dt>
-                                                        <dd className="mt-1.5 text-base font-semibold text-white "> {new Date(item.updated_at).toLocaleDateString('en-US', {
+                                                        <dt className="text-base font-medium text-gray-500 ">Date:</dt>
+                                                        <dd className="mt-1.5 text-base font-semibold text-gray-900 "> {new Date(item.updated_at).toLocaleDateString('en-US', {
                                                             year: 'numeric',
                                                             month: 'long',
                                                             day: 'numeric',
@@ -50,16 +50,16 @@ const Account = () => {
                                                     </dl>
 
                                                     <dl className="w-1/2 sm:w-1/5 md:flex-1 lg:w-auto">
-                                                        <dt className="text-base font-medium text-white ">Price:</dt>
-                                                        <dd className="mt-1.5 text-base font-semibold text-white">{item.course_price}</dd>
+                                                        <dt className="text-base font-medium text-gray-500 ">Price:</dt>
+                                                        <dd className="mt-1.5 text-base font-semibold text-gray-900">{item.course_price}</dd>
                                                     </dl>
                                                     <dl className="w-1/2 sm:w-1/5 md:flex-1 lg:w-auto">
-                                                        <dt className="text-base font-medium text-white ">Coure Name:</dt>
-                                                        <dd className="mt-1.5 text-base font-semibold text-white">{item.course_name}</dd>
+                                                        <dt className="text-base font-medium text-gray-500 ">Coure Name:</dt>
+                                                        <dd className="mt-1.5 text-base font-semibold text-gray-900">{item.course_name}</dd>
                                                     </dl>
 
                                                     <dl className="w-1/2 sm:w-1/4 sm:flex-1 lg:w-auto">
-                                                        <dt className="text-base font-medium text-white ">Status:</dt>
+                                                        <dt className="text-base font-medium text-gray-500 ">Status:</dt>
                                                         <dd className="me-2 mt-1.5 inline-flex shrink-0 items-center rounded bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800 ">
 
                                                             {
@@ -74,7 +74,7 @@ const Account = () => {
                                                             id="actionsMenuDropdownModal10"
                                                             data-dropdown-toggle="dropdownOrderModal10"
                                                             type="button"
-                                                            className="flex w-full items-center justify-center rounded-lg border border-gray-200 course-container px-3 py-2 text-sm font-medium text-white hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 md:w-auto cursor-pointer"
+                                                            className="flex w-full items-center justify-center rounded-lg border border-gray-200 course-container px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 md:w-auto cursor-pointer"
                                                         >
                                                             View Course
                                                         </Link>

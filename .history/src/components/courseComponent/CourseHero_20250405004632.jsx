@@ -120,8 +120,8 @@ const CourseHero = ({ course }) => {
                 <div className="suggestion-pricing ">
                   <div className="p-5">
 
-                    <h5 className="mb-2 text-2xl font-bold tracking-tighttext-white ">
-                      <span className="text-4xl font-semibold text-white tracking-tighter">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
+                      <span className="text-4xl font-semibold text-black tracking-tighter">
                         <Bn content={course.course_price} /> ৳
                       </span>
                     </h5>
@@ -133,12 +133,12 @@ const CourseHero = ({ course }) => {
                       user ? <button
                         onClick={courseContent}
                         type="button"
-                        className="bg-[#0BA3C4] hover:bg-[#FCD34D] hover:text-white text-md font-semibold whitespace-nowrap text-center md:w-full w-full rounded py-2 lg:py-2 text-white cursor-pointer">
+                        className="bg-[#0BA3C4] hover:bg-[#FCD34D] hover:text-black text-md font-semibold whitespace-nowrap text-center md:w-full w-full rounded py-2 lg:py-2 text-white cursor-pointer">
                         View Course
                       </button> : <button
                         onClick={openModal}
                         type="button"
-                        className="bg-[#0BA3C4] hover:bg-[#FCD34D] hover:text-white text-md font-semibold whitespace-nowrap text-center md:w-full w-full rounded py-2 lg:py-2 text-white cursor-pointer">
+                        className="bg-[#0BA3C4] hover:bg-[#FCD34D] hover:text-black text-md font-semibold whitespace-nowrap text-center md:w-full w-full rounded py-2 lg:py-2 text-white cursor-pointer">
                         Enroll Now
                       </button>
                     }
@@ -147,21 +147,21 @@ const CourseHero = ({ course }) => {
 
                   {/* Course Features----------- */}
                   <div className="">
-                    <h3 className="text-lg  font-bold text-white tracking-wide uppercase px-6 py-2">
+                    <h3 className="text-lg  font-bold text-black tracking-wide uppercase px-6 py-2">
                       এই কোর্সে যা থাকছে
                     </h3>
 
                     <li className="flex space-x-3 items-center px-6">
-                      <IoBookOutline className="flex-shrink-0  h-5 w-5 text-white" />
-                      <span className="text-base text-white">ক্লাস সপ্তাহ - {course.course_week}</span>
+                      <IoBookOutline className="flex-shrink-0  h-5 w-5 text-[#0BA3C4]" />
+                      <span className="text-base text-black">ক্লাস সপ্তাহ - {course.course_week}</span>
                     </li>
                     <li className="flex space-x-3 items-center px-6">
-                      <IoBookOutline className="flex-shrink-0  h-5 w-5 text-white" />
-                      <span className="text-base text-white"> ক্লাস রেকর্ড - {course.video_count}</span>
+                      <IoBookOutline className="flex-shrink-0  h-5 w-5 text-[#0BA3C4]" />
+                      <span className="text-base text-black"> ক্লাস রেকর্ড - {course.video_count}</span>
                     </li>
                     <li className="flex space-x-3 items-center px-6">
-                      <IoBookOutline className="flex-shrink-0  h-5 w-5 text-white" />
-                      <span className="text-base text-white"> ফ্রি সার্টিফিকেট - Yes</span>
+                      <IoBookOutline className="flex-shrink-0  h-5 w-5 text-[#0BA3C4]" />
+                      <span className="text-base text-black"> ফ্রি সার্টিফিকেট - Yes</span>
                     </li>
 
                   </div>
@@ -181,7 +181,7 @@ const CourseHero = ({ course }) => {
             className="relative m-4 p-4 w-2/5 lg:min-w-[20%] min-w-[85%]  max-w-[30%] rounded-lg block-bg shadow-sm"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex shrink-0 items-center pb-4 text-xl font-medium text-white">
+            <div className="flex shrink-0 items-center pb-4 text-xl font-medium text-slate-800">
               Sign up to Britto Learning
             </div>
             <div className="relative border-t border-slate-200 py-4 leading-normal text-slate-600 font-light">
@@ -189,16 +189,16 @@ const CourseHero = ({ course }) => {
                 {
                   otp ? <form className="space-y-4" onSubmit={submitOTP}>
                     <div>
-                      <label htmlFor="otp" className="block mb-2 text-sm font-medium text-white ">Submit OTP</label>
-                      <input type="number" name="otp_number" id="otp_number" className="bg-gray-50 border border-gray-300text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="OTP" required />
+                      <label htmlFor="otp" className="block mb-2 text-sm font-medium text-gray-900 ">Submit OTP</label>
+                      <input type="number" name="otp_number" id="otp_number" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="OTP" required />
                     </div>
-                    <button type="submit" className="w-full cursor-pointer text-white bg-[#12C1DF] hover:bg-[#FCD34D] hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm px-5 py-2.5 text-center">Submit OTP</button>
+                    <button type="submit" className="w-full cursor-pointer text-white bg-[#12C1DF] hover:bg-[#FCD34D] hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm px-5 py-2.5 text-center">Submit OTP</button>
                   </form> : <form className="space-y-4" onSubmit={signUp}>
                     <div>
-                      <label htmlFor="number" className="block mb-2 text-sm font-medium text-white ">Your Phone Number</label>
-                      <input type="number" name="number" id="number" className="bg-gray-50 border border-gray-300text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="01755 XXXXXX" required />
+                      <label htmlFor="number" className="block mb-2 text-sm font-medium text-gray-900 ">Your Phone Number</label>
+                      <input type="number" name="number" id="number" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="01755 XXXXXX" required />
                     </div>
-                    <button type="submit" className="w-full cursor-pointer text-white bg-[#12C1DF] hover:bg-[#FCD34D] hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm px-5 py-2.5 text-center">Register to your account</button>
+                    <button type="submit" className="w-full cursor-pointer text-white bg-[#12C1DF] hover:bg-[#FCD34D] hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm px-5 py-2.5 text-center">Register to your account</button>
                   </form>
                 }
               </div>

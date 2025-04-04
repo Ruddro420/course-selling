@@ -100,7 +100,7 @@ const Checkout = () => {
 
                                                 <div className="ms-4 text-sm">
                                                     <label htmlFor="credit-card" className="font-medium leading-none text-white "> Bkash</label>
-                                                    <p className="mt-1 text-sm text-gray-500">Pay With Your Bkash Account</p>
+                                                    <p className="mt-1 text-lg text-gray-500">Pay With Your Bkash Account</p>
                                                     <p className="mt-1 text-xs text-gray-500">1. Dial *247# on your phone.</p>
                                                     <p className="mt-1 text-xs text-gray-500">2. Send money to 01755232541.</p>
                                                     <p className="mt-1 text-xs text-gray-500">3. Add your Bkash number and transaction ID below.</p>
