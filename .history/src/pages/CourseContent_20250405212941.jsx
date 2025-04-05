@@ -78,7 +78,7 @@ export default function CourseContent() {
     };
 
     return (
-        <section className="course-container pb-20">
+        <>
             {
                 loading ? <Loader /> : (
                     <section className="course-container py-24 sm:py-16 lg:py-40">
@@ -168,7 +168,7 @@ export default function CourseContent() {
                     </section> 
                 )
             }
-            
-        </section>
+            <br/>  <br/>  <br/>
+        </>
     );
 }

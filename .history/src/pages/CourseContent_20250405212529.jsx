@@ -29,31 +29,29 @@ export default function CourseContent() {
         getCourseContent();
     }, [id]);
 
+    // 1. Local state to track when we’ve checked isPurchased
     const [isAllowed, setIsAllowed] = useState(null);
+    const [checkingAccess, setCheckingAccess] = useState(true);
 
-    // Wait until purchasedCourses is ready
     useEffect(() => {
-        if (courseLoading) return;
-
-        if (purchasedCourses?.data?.length) {
-            const isPurchased = purchasedCourses.data.some(item => item.course_name == id);
+        if (!courseLoading && purchasedCourses && purchasedCourses.data) {
+            const isPurchased = purchasedCourses.data.some(
+                (item) => item.course_name == id
+            );
             setIsAllowed(isPurchased);
-
+            setCheckingAccess(false);
             if (!isPurchased) {
                 toast.error('You need to purchase this course first');
             }
-        } else {
-            // If no data is available yet, don't redirect or show error
-            console.warn("purchasedCourses.data is empty or undefined.");
         }
     }, [courseLoading, purchasedCourses, id]);
 
-    // Show loader while deciding
-    if (courseLoading || isAllowed === null) {
+    // 2. Show loader while checking access
+    if (courseLoading || checkingAccess) {
         return <Loader />;
     }
 
-    // Redirect if not allowed
+    // 3. If not allowed, redirect
     if (isAllowed === false) {
         return <Navigate to="/all-courses" />;
     }
@@ -78,7 +76,7 @@ export default function CourseContent() {
     };
 
     return (
-        <section className="course-container pb-20">
+        <>
             {
                 loading ? <Loader /> : (
                     <section className="course-container py-24 sm:py-16 lg:py-40">
@@ -165,10 +163,9 @@ export default function CourseContent() {
                                 </div>
                             </div>
                         </div>
-                    </section> 
+                    </section>
                 )
             }
-            
-        </section>
+        </>
     );
 }

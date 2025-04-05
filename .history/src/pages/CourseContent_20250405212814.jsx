@@ -78,10 +78,10 @@ export default function CourseContent() {
     };
 
     return (
-        <section className="course-container pb-20">
+        <>
             {
                 loading ? <Loader /> : (
-                    <section className="course-container py-24 sm:py-16 lg:py-40">
+                    <section className="course-container py-24 sm:py-16 lg:py-40 pb-100">
                         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                             <div className="flex lg:flex-row flex-col lg:h-screen">
                                 {/* Sidebar */}
@@ -165,10 +165,9 @@ export default function CourseContent() {
                                 </div>
                             </div>
                         </div>
-                    </section> 
+                    </section>
                 )
             }
-            
-        </section>
+        </>
     );
 }

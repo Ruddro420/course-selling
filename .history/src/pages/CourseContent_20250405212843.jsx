@@ -78,7 +78,7 @@ export default function CourseContent() {
     };
 
     return (
-        <section className="course-container pb-20">
+        <>
             {
                 loading ? <Loader /> : (
                     <section className="course-container py-24 sm:py-16 lg:py-40">
@@ -135,7 +135,7 @@ export default function CourseContent() {
                                     </div>
 
                                     {/* Navigation Buttons */}
-                                    <div className="flex justify-between">
+                                    <div className="flex justify-between pb-[100px]">
                                         <button
                                             onClick={handlePrev}
                                             disabled={selectedCourseIndex === 0}
@@ -165,10 +165,9 @@ export default function CourseContent() {
                                 </div>
                             </div>
                         </div>
-                    </section> 
+                    </section>
                 )
             }
-            
-        </section>
+        </>
     );
 }
