@@ -96,6 +96,7 @@ const Header = () => {
                     to={menu.link}
                     className="text-base text-black transition-all duration-200 hover:text-opacity-80 font-bold"
                     aria-current="page"
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     {menu.title}
                   </Link>
