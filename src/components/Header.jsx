@@ -32,8 +32,8 @@ const Header = () => {
 
   return (
     <div>
-      <nav className=" fixed w-full z-[999] top-0 start-0">
-        <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto px-6 lg:px-8 py-4 nav-container">
+      <nav className=" fixed w-full z-[999] top-0 start-0 px-2 lg:px-0">
+        <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto px-6 mx-5 lg:px-8 py-4 nav-container">
           <Link to={"/"} title="" className="flex">
             <img
               className="lg:h-10 h-8"

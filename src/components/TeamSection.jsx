@@ -16,7 +16,7 @@ const TeamSection = () => {
 
                     <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2 mt-10">
                         {teamData.map((member, index) => (
-                            <div key={index} className="items-center block-bg rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+                            <div key={index} className="items-center block-bg rounded-lg shadow sm:flex dark:bg-gray-800 flex justify-center dark:border-gray-700">
                                 <a href="#">
                                     <img className="w-auto rounded-lg sm:rounded-none sm:rounded-l-lg" src={member.image} alt="Bonnie Avatar" />
                                 </a>

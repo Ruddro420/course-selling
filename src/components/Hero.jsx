@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className='hero-container'>
-      <section className="py-10 sm:py-16 lg:py-24">
+      <section className=" sm:py-16 lg:py-24">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center grid-cols-1 lg:gap-12 lg:grid-cols-1">
             <div className="order-2 lg:order-1 mt-0 lg:mt-0 pb-6 lg:pb-0">
-              <p className="upper-text font-semibold tracking-wider leading-tight text-[#0BA3C4] uppercase lg:text-3xl text-2xl mt-20 lg:mt-6 ">
+              <p className="upper-text font-semibold tracking-wider leading-tight text-[#0BA3C4] uppercase lg:text-3xl text-2xl mt-10 lg:mt-6 ">
                 চলো নতুন কিছু করা যাক !
               </p>
               <h1 className="animated-text mt-4 text-4xl lg:text-2xl font-bold lg:leading-22 leading-12 text-black lg:mt-4 sm:text-6xl xl:text-7xl">

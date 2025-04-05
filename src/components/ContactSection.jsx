@@ -36,7 +36,7 @@ const ContactSection = () => {
       <section className=" sm:py-16 lg:py-24">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl pt-5 lg:pt-0">
               যোগাযোগ
             </h2>
             <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-500">
@@ -46,8 +46,8 @@ const ContactSection = () => {
 
           <div className="max-w-5xl mx-auto mt-12 sm:mt-16">
             <div className="mt-6 overflow-hidden course-container p-10 rounded call-action rounded-xl">
-              <div className="px-6 py-12 sm:p-12">
-                <h3 className="text-3xl font-semibold text-center text-white">
+              <div className=" sm:p-12">
+                <h3 className="lg:text-3xl text-2xl font-semibold text-center text-white">
                   Send us a message
                 </h3>
                 {/* Contact Form------------------------------ */}
