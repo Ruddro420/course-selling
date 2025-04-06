@@ -135,7 +135,7 @@ const CourseHero = ({ course, sloading }) => {
                     {course.short_bio}
                   </p>
                 </div>
-                <div className="md:w-1/2 lg:w-1/3 z-40  pt-20  md:mt-12  flex-shrink-0 hero-cards hero-cards2">
+                <div className="md:w-1/2 max-w-[80vw] lg:w-1/3 z-40  pt-20  md:mt-12  flex-shrink-0 hero-cards hero-cards2">
                   <div className="max-w-md pb-4  block-bg  border-gray-200  shadow-lg main-card">
                     <a href="#">
                       <img
