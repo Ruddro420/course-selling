@@ -107,11 +107,11 @@ const ContactSection = () => {
                           name="phone"
                           id="phone"
                           placeholder="Enter your full name"
-                          className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
+                          className="block lg:w-[53rem] w-[17.5rem] px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
                         />
                       </div>
                     </div>
-                    <div>
+              {/*       <div>
                       <label
                         htmlFor="course"
                         className="text-base font-medium text-white"
@@ -127,15 +127,9 @@ const ContactSection = () => {
                           <option value="">Select Targated Course</option>
 
 
-                          {/* {courses?.map((course, index) => (
-                                  <option key={index} value={course.title}>
-                                    {course.title}
-                                  </option>
-                                ))} */}
-
                         </select>
                       </div>
-                    </div>
+                    </div> */}
 
                     <div className="sm:col-span-2">
                       <label
