@@ -5,6 +5,7 @@ import { useContext, useEffect, useState } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import { DataContext } from "../context/DataContext";
 import toast from "react-hot-toast";
+import Loader from "../components/Loader/Loader";
 
 const SingleCourse = () => {
   const [loading, setLoading] = useState(true);
@@ -43,7 +44,7 @@ const SingleCourse = () => {
     <>
       <section className='footer-container'>
         {loading ? (
-          <div>Loading...</div>
+          <Loader/>
         ) : (
           <div className="">
             <CourseHero course={course} sloading={loading} />

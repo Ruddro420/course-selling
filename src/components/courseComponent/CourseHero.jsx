@@ -125,17 +125,17 @@ const CourseHero = ({ course, sloading }) => {
       {
         sloading ? <Loader /> : <div className="">
           <div className="course-container py-80 course-hero-section  h-80 flex items-center justify-between mx-auto p-4 lg:py-56">
-            <div className="container mx-auto lg:mt-10 mt-42 max-w-screen-xl md:px-12">
-              <div className="flex flex-col course-hero md:flex-row md:gap-12">
+            <div className="container mx-auto lg:mt-10 mt-42 md:mt-10 max-w-screen-xl md:px-4 lg:px-12">
+              <div className="flex flex-col course-hero md:flex-row md:gap-5 lg:gap-12">
                 <div className="md:w-1/2 lg:w-2/3 pt-20 px-6 flex-grow hero-cards">
-                  <h1 className=" md:text-4xl text-3xl text-white font-bold mb-6">
+                  <h1 className=" md:text-4xl lg:mt-0 md:mt-0 mt-20 text-3xl text-white font-bold mb-6">
                     {course.course_name}
                   </h1>
                   <p className="text-md md:text-xl lg:text-xl text-gray-400 mb-8">
                     {course.short_bio}
                   </p>
                 </div>
-                <div className="md:w-1/2 lg:w-1/3 z-40  pt-20  md:mt-12  flex-shrink-0 hero-cards hero-cards2">
+                <div className="md:w-1/2 max-w-[80vw] lg:w-1/3 z-40  pt-20  md:mt-12  flex-shrink-0 hero-cards hero-cards2">
                   <div className="max-w-md pb-4  block-bg  border-gray-200  shadow-lg main-card">
                     <a href="#">
                       <img

@@ -7,7 +7,7 @@ import {DataProvider} from "../context/DataContext"
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="max-w-screen overflow-x-hidden">
       <DataProvider>
         <Toaster position="top-center" reverseOrder={false} />
         <Header />
