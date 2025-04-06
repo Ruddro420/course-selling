@@ -8,7 +8,7 @@ const AllCourses = () => {
   const { getCourseApiData, loading } = useContext(DataContext);
   return (
     <div className="course-container">
-      <section className=" py-10 mt-20 lg:mt-0 sm:py-16 lg:pt-44">
+      <section className="pt-40 py-10 lg:mt-0 sm:py-16 lg:pt-24">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
