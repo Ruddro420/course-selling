@@ -36,7 +36,7 @@ const Header = () => {
         <div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto px-6 mx-5 lg:px-8 py-4 nav-container">
           <Link to={"/"} title="" className="flex">
             <img
-              className="lg:h-10 h-8"
+              className="lg:h-10 md:h-8 h-6"
               src="../../img/logo.png"
               alt="Britto_Learning"
             />
@@ -45,14 +45,14 @@ const Header = () => {
             {user ? (
               <button
                 type="button"
-                className="text-white hover:text-black bg-[#0CC0DF] hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-[#0CC0DF] dark:hover:bg-yellow-300 dark:focus:ring-yellow-300"
+                className="text-white hover:text-black bg-[#0CC0DF] hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-3 py-1 lg:px-4 lg:py-2 text-center dark:bg-[#0CC0DF] dark:hover:bg-yellow-300 dark:focus:ring-yellow-300"
               >
                 <Link to={"/account"}>Dashboard</Link>
               </button>
             ) : (
               <button
                 type="button"
-                className="text-white hover:text-black bg-[#0CC0DF] hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-[#0CC0DF] dark:hover:bg-yellow-300 dark:focus:ring-yellow-300"
+                className="text-white hover:text-black bg-[#0CC0DF] hover:bg-yellow-300 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-3 py-1 lg:px-4 lg:py-2 text-center dark:bg-[#0CC0DF] dark:hover:bg-yellow-300 dark:focus:ring-yellow-300"
               >
                 <Link to={"/login"}>লগইন করুন</Link>
               </button>
