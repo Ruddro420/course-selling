@@ -125,7 +125,7 @@ export default function CourseContent() {
                                             allow="autoplay; fullscreen"
                                             className="rounded-lg shadow-lg"
                                         />
-                                        <img className="overlay" src="../../img/fav-icon.jpg" alt="Overlay" />
+                                        <img className="overlay " src="../../img/fav-icon.jpg" alt="Overlay" />
                                     </div>
 
                                     {/* Topic Description */}
