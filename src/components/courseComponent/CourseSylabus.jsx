@@ -60,7 +60,7 @@ const CourseSylabus = ({ course, sloading }) => {
             {videoUrl && (
               <div className="w-full mt-4">
                 <h3 className="text-xl font-semibold mb-2">ইন্ট্রো ভিডিও</h3>
-                <div className="w-auto h-full -ml-2 md:h-96 lg:h-full lg:w-auto rounded md:px-0 pr-6">
+                <div className="w-auto h-full -ml-2  rounded">
                   <iframe
                     width="350"
                     height="100%"
